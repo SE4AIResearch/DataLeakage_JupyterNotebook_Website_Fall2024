@@ -1,0 +1,62 @@
+.tasks {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+}
+
+.task {
+  border: 1px solid;
+  border-radius: .25rem;
+  padding: .5rem;
+  background-color: white;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.task:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.task[data-status="Todo"] {
+  border-color: purple;
+}
+.task[data-status="In Progress"] {
+  border-color: orange;
+}
+.task[data-status="Done"] {
+  border-color: green;
+}
+.task[data-status="Dropped"] {
+  border-color: darkred;
+}
+.task[data-status="Todo"] .tag {
+  background-color: purple;
+  color: white;
+}
+.task[data-status="In Progress"] .tag {
+  background-color: orange;
+  color: black;
+}
+.task[data-status="Done"] .tag {
+  background-color: green;
+  color: white;
+}
+.task[data-status="Dropped"] .tag {
+  background-color: darkred;
+  color: white;
+}
+
+.task h2 {
+  font-size: 1.25rem;
+  margin: .5rem 0 .25rem 0;
+}
+
+.task .tag {
+  border-radius: 1rem;
+  padding: .25rem .5rem;
+  font-size: .75em;
+}
+
+.task p {
+  margin: 0;
+}

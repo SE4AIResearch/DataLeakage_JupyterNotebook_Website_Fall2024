@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1:has(+ .subtitle) {
+  margin-bottom: .5rem;
+}
+
+h1 + .subtitle {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.bubble {
+  background-color: #efefef;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.32);
+  padding: 1rem;
+}
+
+.bubble:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.bubble h1 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  border-bottom: 1px solid;
+}
+
+h3.title {
+  border-bottom: none;
+}
+
+h3.title span {
+  border-bottom: 1px solid;
+}
+
+img.showcase {
+  display: block;
+  margin: auto;
+  max-width: calc(100%);
+}
+
+div.contributer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #eee;
+}
+
+div.contributer p {
+  font-weight: bold;
+}
+
+img.contributer {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.ghbtns {
+  display: flex;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.download-btn {
+  display: block;
+  padding: 3px 10px 3px 8px;
+  margin-right: 2rem;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #eee;
+  background-image: linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
+  background-repeat: no-repeat;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  background-image: linear-gradient(to bottom, #eee 0, #ddd 100%);
+  border-color: #ccc;
+}
