@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VSCode Extension for Data Leakage Analaysis",
+  title: "VS Code Extension for Data Leakage Analysis",
   description:
-    "A VSCode extension  to enable machine learning (ML) engineers to write better code by helping them find and fix instances of Data Leakage in their model",
+    "A VS Code extension to enable machine learning (ML) engineers to write better code by helping them find and fix instances of Data Leakage in their model",
 };
 
 export default function RootLayout({
