@@ -2,7 +2,7 @@
 import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import "../globals.css"
-//https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Website_Fall2024/
+
 export default function Resources() {
   return (
     <Box>
