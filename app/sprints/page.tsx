@@ -2,12 +2,13 @@
 import { Box, Container, Link, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import "../globals.css";
+import "./sprint.css";
 
 export default function Sprints() {
   return (
     <Box>
       <ResponsiveAppBar />
-      <h2>Sprint 1</h2>
+      {/* <h2>Sprint 1</h2>
       <Table sx={{ maxWidth: 650 }} aria-label="Example static collection table">
         <TableHead>
           <TableRow>
@@ -43,9 +44,10 @@ export default function Sprints() {
 
             <TableCell>
               <Box sx={{ p: 1, border: '1px dashed grey', width: 250, height: 120 }}>
+                <span>Done</span>
                 <h3>Install Docker</h3>
                 Members Involved: All
-                <p>Done</p>
+                
               </Box>
             </TableCell>
 
@@ -74,7 +76,54 @@ export default function Sprints() {
             </TableCell>
           </TableRow>
         </TableHead>
-      </Table>
+      </Table> */}
+
+      <div className="bubble">
+        <h1>Sprint 1</h1>
+        <div className="tasks">
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Split Team into Groups</h2>
+              <p>Members Involved: All</p>
+          </div>
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Review original codebase</h2>
+              <p>Members Involved: All</p>
+            </div>
+        </div>
+      </div>
+
+      <div className="bubble">
+        <h1>Sprint 2</h1>
+        <div className="tasks">
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Read Fall 2023 Report</h2>
+              <p>Members Involved: All</p>
+          </div>
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Install Docker</h2>
+              <p>Members Involved: All</p>
+          </div>
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Create Short Quiz</h2>
+              <p>Members Involved: Owen</p>
+          </div>
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Complete Short Quiz</h2>
+              <p>Members Involved: Michael, Terrence, Arnav, Ryan, Jeffrey</p>
+          </div>
+          <div className="task" data-status="Done">
+              <span className="tag">Done</span>
+              <h2>Create Test VSCode Extension</h2>
+              <p>Members Involved: All</p>
+          </div>
+        </div>
+      </div>
   
         
     </Box>
