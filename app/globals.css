@@ -2,9 +2,3 @@ body {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   margin: 0;
 }
-
-.bubble {
-  background-color: #efefef;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.32);
-  padding: 1rem;
-}
