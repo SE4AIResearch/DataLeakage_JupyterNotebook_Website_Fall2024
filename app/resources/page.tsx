@@ -1,31 +1,55 @@
 "use client"; // This directive allows the component to run on the client side.
-import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
-import "../globals.css"
 
 export default function Resources() {
   return (
     <Box>
       <ResponsiveAppBar />
-      <Box sx={{ textAlign: "left", pt: "5vh" }}>
-        <h2>Source Code</h2>
-        <Button variant="contained" href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Fall2024/">
-              Plugin Code
+      <Container maxWidth="md" sx={{ textAlign: "left", pt: "5vh" }}>
+        <Typography variant="h4" gutterBottom>
+          Source Code
+        </Typography>
+        <Button
+          variant="contained"
+          href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Fall2024/"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Plugin Code
         </Button>
-        <br></br>
-        <br></br>
-        <Button variant="contained" href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Website_Fall2024/">
-              Website Code
+        <Typography variant="h4" gutterBottom>
+          Website Code
+        </Typography>
+        <Button
+          variant="contained"
+          href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Website_Fall2024/"
+          sx={{ mb: 4, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Website Code
         </Button>
-        <h2>Week 1</h2>
-        <Button variant="contained" href="https://docs.google.com/presentation/d/1E1ebly_8aZ3sP5-ta5DjYG2ETjui0gxEugu2oE9HEUo/edit?usp=sharing">
-              Week 1 Slides
+
+        {/* Weekly breakdowns */}
+        <Typography variant="h4" gutterBottom>
+          Week 1
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://docs.google.com/presentation/d/1E1ebly_8aZ3sP5-ta5DjYG2ETjui0gxEugu2oE9HEUo/edit?usp=sharing"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Week 1 Slides
         </Button>
-        <h2>Week 2</h2>
-        <Button variant="contained" href="https://docs.google.com/presentation/d/1QDEsVZXuEm_hUe95__Pe__K4cmiR8G0bxx8NeyYBHPo/edit?usp=sharing">
-              Week 2 Slides
+        <Typography variant="h4" gutterBottom>
+          Week 2
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://docs.google.com/presentation/d/1OJM9_Rmq2RwhpVb4TaRemJk5b8uwie4PWr5b8dLCbE8/edit?usp=sharing"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Week 2 Slides
         </Button>
-      </Box>
+      </Container>
     </Box>
   );
 }
