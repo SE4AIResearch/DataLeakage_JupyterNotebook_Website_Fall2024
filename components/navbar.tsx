@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -22,8 +21,9 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
+  const open = Boolean(anchorElNav);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -47,20 +47,19 @@ function ResponsiveAppBar() {
               color: "inherit",
             }}
           >
-            <AssessmentIcon
-              sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
-            />
-            <Typography
-              variant="h6"
-              noWrap
+            <AssessmentIcon />
+            <Button
+              key="Home page"
               sx={{
+                fontSize: "1.5em",
                 fontWeight: 700,
                 color: "inherit",
                 textDecoration: "none",
+                textTransform: "none",
               }}
             >
               Home
-            </Typography>
+            </Button>
           </Box>
 
           {/* Mobile Menu */}
@@ -68,8 +67,9 @@ function ResponsiveAppBar() {
             <IconButton
               size="large"
               aria-label="menu"
-              aria-controls="menu-appbar"
+              aria-controls={open ? "menu-appbar" : undefined}
               aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
               onClick={handleOpenNavMenu}
               color="inherit"
             >
@@ -83,28 +83,18 @@ function ResponsiveAppBar() {
                 horizontal: "left",
               }}
               keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
+              open={open}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
             >
               {/* Dropdown menu links for small screens */}
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <Typography
-                    component="a"
-                    href={page.link}
-                    sx={{
-                      textAlign: "center",
-                      textDecoration: "none",
-                      color: "inherit",
-                    }}
-                  >
-                    {page.name}
-                  </Typography>
+                <MenuItem
+                  component="a"
+                  href={page.link}
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
+                >
+                  {page.name}
                 </MenuItem>
               ))}
             </Menu>
@@ -123,7 +113,7 @@ function ResponsiveAppBar() {
                   display: "block",
                   fontFamily: "Arial,Helvetica,sans-serif", // Set a default font
                   fontWeight: "normal",
-                  fontSize: "1em",
+                  fontSize: "1.25em",
                   textTransform: "none", // Disable uppercase transformation
                   "&:hover": {
                     backgroundColor: "rgba(255, 255, 255, 0.2)", // Hover effect
