@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       {/* Headline and call to action buttons */}
       <Box sx={{ textAlign: "center", pt: "5vh" }}>
         <Container>
-          <Typography variant="h4" component="h1" gutterBottom>
+          <Typography variant="h4" component="h1" fontWeight="bold" gutterBottom>
             Data Leakage VS Code Plugin
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         </Container>
 
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
-          <Typography variant="h4" component="h1">
+          <Typography variant="h4" component="h1" fontWeight="bold">
             Contributors
           </Typography>
         </Container>
