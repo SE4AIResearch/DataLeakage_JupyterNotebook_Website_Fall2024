@@ -1,0 +1,35 @@
+
+
+.complete {
+  display: inline-block;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: green;
+  padding: 2;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 325px;
+  min-width: 325px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.box-noscroll {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.32);
+}
+
+.box-scroll {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.32);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
