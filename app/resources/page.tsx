@@ -34,7 +34,7 @@ export default function Resources() {
         </Typography>
         <Button
           variant="outlined"
-          href="https://docs.google.com/presentation/d/1E1ebly_8aZ3sP5-ta5DjYG2ETjui0gxEugu2oE9HEUo/edit?usp=sharing"
+          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EZUunylmRAZJkPcN8ebLqowB2oAIDRUc6_BoebvHcBNOnA"
           sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
         >
           Week 1 Slides
@@ -44,10 +44,20 @@ export default function Resources() {
         </Typography>
         <Button
           variant="outlined"
-          href="https://docs.google.com/presentation/d/1OJM9_Rmq2RwhpVb4TaRemJk5b8uwie4PWr5b8dLCbE8/edit?usp=sharing"
+          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/ESVxiL9htGJAlRu0TfUj5dMBWJ1EeKfhQkJWh-2yYedQXw"
           sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
         >
           Week 2 Slides
+        </Button>
+        <Typography variant="h4" gutterBottom>
+          Week 3
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/ETRcULTNhDtFpOtp58c3ze4BwfXVjq96YxsTnHCNXceMzw"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Week 3 Slides
         </Button>
       </Container>
     </Box>
