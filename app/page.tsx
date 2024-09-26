@@ -63,13 +63,11 @@ const Home: React.FC = () => {
         <Box
           sx={{
             maxWidth: "600px",
-            width: "100%",
             mx: "auto",
             my: 2,
             display: "flex",
             alignItems: "center",
             backgroundColor: "#eee",
-            padding: 2,
             borderRadius: "8px",
             marginBottom: "1rem",
           }}
@@ -82,6 +80,9 @@ const Home: React.FC = () => {
             style={{
               objectFit: "cover",
               borderRadius: "8px",
+              paddingTop: "1rem",
+              paddingBottom: "1rem",
+              paddingLeft: "1rem",
               marginRight: "1rem",
             }}
           />
