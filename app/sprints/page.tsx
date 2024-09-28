@@ -147,6 +147,76 @@ export default function Sprints() {
           </Typography>
           <Typography component="p">Members Involved: All</Typography>
         </Container>
+        </Box>
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ px: 5, pt: 5 }}
+      >
+        Sprint 3
+      </Typography>
+
+      <Box className = "box-scroll">
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Understand What Needs to Be Parsed from CSV and Facts File
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Implement Button for VS Code Extension
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Understand What Needs to Be Parsed from CSV and Facts File
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Understand What Needs to Be Parsed from CSV and Facts File
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Figure Out Tasks for Website
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Build Website with Next.js
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
       </Box>
     </Box>
   );
