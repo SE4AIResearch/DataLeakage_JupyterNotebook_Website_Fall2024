@@ -28,6 +28,7 @@ function createData(
 const rows = [
   createData(1, 2, 2, 2, 2, 2, 2),
   createData(2, 8.92, 3, 3.5, 4, 3, 3),
+  createData(3, 11.43, 1.5, 9, 13, 5, 4),
 ];
 
 export default function SignUpPage() {
