@@ -7,6 +7,7 @@ import michaelPfp from "../public/images/michael-pfp.jpg";
 import owenPfp from "../public/images/owen-pfp.jpg";
 import ryanPfp from "../public/images/ryan-pfp.jpg";
 import terrencePfp from "../public/images/terrence-pfp.jpg";
+import alomarPfp from "../public/images/alomar-pfp.jpg";
 // Note: layout.tsx has the metadata (title, description), overridable
 
 const Home: React.FC = () => {
@@ -18,7 +19,12 @@ const Home: React.FC = () => {
       {/* Headline and call to action buttons */}
       <Box sx={{ textAlign: "center", pt: "5vh" }}>
         <Container>
-          <Typography variant="h4" component="h1" fontWeight="bold" gutterBottom>
+          <Typography
+            variant="h4"
+            component="h1"
+            fontWeight="bold"
+            gutterBottom
+          >
             Data Leakage VS Code Plugin
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
@@ -50,13 +56,49 @@ const Home: React.FC = () => {
           </Link>
         </Container>
 
+        {/* Project advisor section */}
+        <Container sx={{ pt: "5vh", borderBottom: 1 }}>
+          <Typography variant="h4" component="h1" fontWeight="bold">
+            Project Advisor
+          </Typography>
+        </Container>
+        <Box
+          sx={{
+            maxWidth: "600px",
+            mx: "auto",
+            my: 2,
+            display: "flex",
+            alignItems: "center",
+            backgroundColor: "#eee",
+            borderRadius: "8px",
+            marginBottom: "1rem",
+          }}
+        >
+          <Image
+            src={alomarPfp}
+            alt="Dr. Eman Abdullah AlOmar profile picture"
+            width={100}
+            height={100}
+            style={{
+              objectFit: "cover",
+              borderRadius: "8px",
+              paddingTop: "1rem",
+              paddingBottom: "1rem",
+              paddingLeft: "1rem",
+              marginRight: "1rem",
+            }}
+          />
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Dr. Eman Abdullah AlOmar
+          </Typography>
+        </Box>
+
+        {/* Contributor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
           <Typography variant="h4" component="h1" fontWeight="bold">
             Contributors
           </Typography>
         </Container>
-
-        {/* Contributor section */}
         <Box
           sx={{
             display: "inline-block",
