@@ -209,12 +209,42 @@ export default function Sprints() {
         </Container>
 
         <Container className = "complete">
-          <Chip label="Done" color="success" sx={{fontWeight: "bold"}}/>
+          <Chip label="In Progress" color="info" sx={{fontWeight: "bold"}}/>
           <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
             Build Website with Next.js
           </Typography>
           <Typography component="p" sx={{ whiteSpace: "normal" }}>
             Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Failed" color="error" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Try SWIG (failed due to relying on Souffle)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Failed" color="error" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Try Visual Studio CLI with Chocolatey and vcpkg (failed due to errors)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen, Arnav
+          </Typography>
+        </Container>
+
+        <Container className = "complete">
+          <Chip label="Failed" color="error" sx={{fontWeight: "bold"}}/>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+            Try Visual Studio GUI (failed because VS didn't recognize it as a valid project)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
           </Typography>
         </Container>
       </Box>
