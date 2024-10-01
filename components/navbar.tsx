@@ -36,31 +36,24 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Home Link with Icon for both small and large screens */}
-          <Box
-            component="a"
+          <Button
             href="/"
+            startIcon={<AssessmentIcon />}
             sx={{
-              mx: 1,
-              display: "flex",
-              alignItems: "center",
+              fontSize: "1.25em",
+              color: "white",
               textDecoration: "none",
-              color: "inherit",
+              textTransform: "none",
+              fontFamily: "Arial,Helvetica,sans-serif",
+              fontWeight: "bold",
+              "&:hover": {
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
+                color: "white",
+              },
             }}
           >
-            <AssessmentIcon />
-            <Button
-              key="Home page"
-              sx={{
-                fontSize: "1.5em",
-                fontWeight: 700,
-                color: "inherit",
-                textDecoration: "none",
-                textTransform: "none",
-              }}
-            >
-              Home
-            </Button>
-          </Box>
+            Home
+          </Button>
 
           {/* Mobile Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
