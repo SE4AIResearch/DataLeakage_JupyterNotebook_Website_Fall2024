@@ -36,7 +36,9 @@ const Home: React.FC = () => {
             the training dataset. As a result, the model effectively
             &quot;memorizes&quot; the data it trains on, leading to an overly
             optimistic estimate of model performance and an inability to make
-            generalized predictions. To avoid introducing data leakage into
+            generalized predictions.<br></br>
+            <br></br>
+            To avoid introducing data leakage into
             their code, ML developers must carefully separate their data into
             training, evaluation, and test sets. Training data should be used to
             train the model, evaluation data should be used to confirm the

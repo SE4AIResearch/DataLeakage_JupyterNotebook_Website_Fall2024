@@ -23,53 +23,7 @@ export default function Sprints() {
     <Box>
       <ResponsiveAppBar />
 
-      {/* <div className="bubble">
-        <h1>Sprint 1</h1>
-        <div className="tasks">
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Split Team into Groups</h2>
-              <p>Members Involved: All</p>
-          </div>
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Review original codebase</h2>
-              <p>Members Involved: All</p>
-            </div>
-        </div>
-      </div>
-
-      <div className="bubble">
-        <h1>Sprint 2</h1>
-        <div className="tasks">
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Read Fall 2023 Report</h2>
-              <p>Members Involved: All</p>
-          </div>
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Install Docker</h2>
-              <p>Members Involved: All</p>
-          </div>
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Create Short Quiz</h2>
-              <p>Members Involved: Owen</p>
-          </div>
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Complete Short Quiz</h2>
-              <p>Members Involved: Michael, Terrence, Arnav, Ryan, Jeffrey</p>
-          </div>
-          <div className="task" data-status="Done">
-              <span className="tag">Done</span>
-              <h2>Create Test VSCode Extension</h2>
-              <p>Members Involved: All</p>
-          </div>
-        </div>
-      </div> */}
-
+      {/* Sprint 1 */}
       <Typography
         variant="h4"
         fontWeight="bold"
@@ -81,24 +35,33 @@ export default function Sprints() {
       <Box className="box-noscroll">
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Split Teams Into Groups
           </Typography>
-          <Typography component="p">Members Involved: All</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: All
+          </Typography>
         </Container>
-
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
           <Typography
             variant="h6"
             component="h2"
-            sx={{ fontWeight: "bold", color: "black" }}
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
           >
             Review Original Codebase
           </Typography>
-          <Typography component="p">Members Involved: All</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: All
+          </Typography>
         </Container>
       </Box>
+
+      {/* Sprint 2 */}
       <Typography
         variant="h4"
         fontWeight="bold"
@@ -110,30 +73,52 @@ export default function Sprints() {
       <Box className="box-scroll">
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Read Fall 2023 Report
           </Typography>
-          <Typography component="p">Members Involved: All</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: All
+          </Typography>
         </Container>
 
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Install Docker
           </Typography>
-          <Typography component="p">Members Involved: All</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: All
+          </Typography>
         </Container>
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Create Short Quiz
           </Typography>
-          <Typography component="p">Members Involved: Owen</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen
+          </Typography>
         </Container>
 
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Complete Short Quiz
           </Typography>
           <Typography component="p" sx={{ whiteSpace: "normal" }}>
@@ -142,10 +127,128 @@ export default function Sprints() {
         </Container>
         <Container className="complete">
           <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
-          <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
             Create Test VSCode Extension
           </Typography>
-          <Typography component="p">Members Involved: All</Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: All
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* Sprint 3 */}
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ px: 5, pt: 5 }}
+      >
+        Sprint 3
+      </Typography>
+
+      <Box className="box-scroll">
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Understand Which CSV & Facts Files to Parse
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Implement Button for VS Code Extension
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Figure Out Tasks for Website
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Build Website with Next.js
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Failed" color="error" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Try SWIG (Failed Due to Relying on Souffle)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Failed" color="error" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Try Visual Studio CLI with Chocolatey and vcpkg (Failed Due to
+            Errors)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen, Arnav
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Failed" color="error" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Try Visual Studio GUI (Failed Because VS Didn&apos;t Recognize it as
+            a Valid Project)
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
+          </Typography>
         </Container>
       </Box>
     </Box>
