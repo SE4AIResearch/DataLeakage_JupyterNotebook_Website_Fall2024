@@ -59,6 +59,26 @@ export default function Resources() {
         >
           Week 3 Slides
         </Button>
+        <Typography variant="h4" gutterBottom>
+          Week 4
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EXR2lRv2Q55HpLgX-piCk-cB6Y9Fbp9pcIYJASZJGSSWmg"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Week 4 Slides
+        </Button>
+        <Typography variant="h4" gutterBottom>
+          Week 5
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EYa-oX9_SEpDskSKCHV6CacBz5jnxoYuBkpRogVdjIgLFw"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Week 5 Slides
+        </Button>
       </Container>
     </Box>
   );

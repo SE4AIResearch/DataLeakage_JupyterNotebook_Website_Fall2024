@@ -152,7 +152,7 @@ export default function Sprints() {
 
       <Box className="box-scroll">
         <Container className="complete">
-          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
           <Typography
             variant="h6"
             component="h2"
@@ -248,6 +248,156 @@ export default function Sprints() {
           </Typography>
           <Typography component="p" sx={{ whiteSpace: "normal" }}>
             Members Involved: Arnav
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* Sprint 4 */}
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ px: 5, pt: 5 }}
+      >
+        Sprint 4
+      </Typography>
+
+      <Box className="box-scroll">
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Understand Which CSV & Facts Files to Parse
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Develop Button for VS Code Extension
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Keep Researching Docker-free Algorithm
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Update Info to All Website Pages
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Michael, Ryan, Jeffrey
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Deploy Website to Vercel
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Ryan
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* Sprint 5 */}
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ px: 5, pt: 5 }}
+      >
+        Sprint 5
+      </Typography>
+
+      <Box className="box-scroll">
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Understand Which CSV & Facts Files to Parse
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Terrence
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Develop Button for VS Code Extension
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Owen
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="In Progress" color="info" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Keep Researching Docker-free Algorithm
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Arnav
+          </Typography>
+        </Container>
+
+        <Container className="complete">
+          <Chip label="Done" color="success" sx={{ fontSize: "1rem" }} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ fontWeight: "bold", whiteSpace: "normal" }}
+          >
+            Create Tests for Button
+          </Typography>
+          <Typography component="p" sx={{ whiteSpace: "normal" }}>
+            Members Involved: Ryan, Michael, Jeffrey
           </Typography>
         </Container>
       </Box>
