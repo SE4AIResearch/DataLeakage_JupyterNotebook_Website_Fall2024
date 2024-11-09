@@ -1,6 +1,7 @@
 "use client"; // This directive allows the component to run on the client side.
 import { Box, Button, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
+import { oneDriveBaseURL, resourceIds } from "./resourceData";
 
 export default function Resources() {
   return (
@@ -28,57 +29,22 @@ export default function Resources() {
           Website Code
         </Button>
 
-        {/* Weekly breakdowns */}
-        <Typography variant="h4" gutterBottom>
-          Week 1
-        </Typography>
-        <Button
-          variant="outlined"
-          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EZUunylmRAZJkPcN8ebLqowB2oAIDRUc6_BoebvHcBNOnA"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-        >
-          Week 1 Slides
-        </Button>
-        <Typography variant="h4" gutterBottom>
-          Week 2
-        </Typography>
-        <Button
-          variant="outlined"
-          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/ESVxiL9htGJAlRu0TfUj5dMBWJ1EeKfhQkJWh-2yYedQXw"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-        >
-          Week 2 Slides
-        </Button>
-        <Typography variant="h4" gutterBottom>
-          Week 3
-        </Typography>
-        <Button
-          variant="outlined"
-          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/ETRcULTNhDtFpOtp58c3ze4BwfXVjq96YxsTnHCNXceMzw"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-        >
-          Week 3 Slides
-        </Button>
-        <Typography variant="h4" gutterBottom>
-          Week 4
-        </Typography>
-        <Button
-          variant="outlined"
-          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EXR2lRv2Q55HpLgX-piCk-cB6Y9Fbp9pcIYJASZJGSSWmg"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-        >
-          Week 4 Slides
-        </Button>
-        <Typography variant="h4" gutterBottom>
-          Week 5
-        </Typography>
-        <Button
-          variant="outlined"
-          href="https://stevens0-my.sharepoint.com/:p:/g/personal/ealomar_stevens_edu/EYa-oX9_SEpDskSKCHV6CacBz5jnxoYuBkpRogVdjIgLFw"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-        >
-          Week 5 Slides
-        </Button>
+        {resourceIds.map((link, i) => {
+          return (
+            <div key={i}>
+              <Typography variant="h4" gutterBottom>
+                Week {i + 1}
+              </Typography>
+              <Button
+                variant="outlined"
+                href={`${oneDriveBaseURL}${link}`}
+                sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+              >
+                Week {i + 1} Slides
+              </Button>
+            </div>
+          )
+        })}
       </Container>
     </Box>
   );

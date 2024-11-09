@@ -25,12 +25,17 @@ function createData(
   return { week, owen, michael, arnav, ryan, jeffrey, terrence };
 }
 // Add row data here
+// Alphabetical order: Arnav Jeffrey Michael Owen Ryan Terrence
 const rows = [
   createData(1, 2, 2, 2, 2, 2, 2),
-  createData(2, 8.92, 3, 3.5, 4, 3, 3),
-  createData(3, 11.43, 1.5, 9, 13, 5, 4),
-  createData(4, 7.5, 6, 15, 2, 4, 2),
-  createData(5, 7.17, 4, 5, 2, 3, 2),
+  createData(2, 3.5, 3, 3, 8.92, 4, 4),
+  createData(3, 9, 5, 1.5, 11.43, 13, 4),
+  createData(4, 15, 2, 2, 7.5, 4, 6),
+  createData(5, 5, 2, 2, 7.17, 3, 4),
+  createData(6, 5, 2, 2, 6.83, 3, 4),
+  createData(7, 3, 1, 2, 3.58, 3, 1),
+  createData(8, 3, 1, 2, 7.75, 4, 6),
+  createData(9, 7, 6, 3, 8.83, 3, 10),
 ];
 
 export default function SignUpPage() {
@@ -64,7 +69,13 @@ export default function SignUpPage() {
                 align="center"
                 sx={{ fontSize: "1em", fontWeight: "bold" }}
               >
-                Owen
+                Arnav
+              </TableCell>
+              <TableCell
+                align="center"
+                sx={{ fontSize: "1em", fontWeight: "bold" }}
+              >
+                Jeffrey
               </TableCell>
               <TableCell
                 align="center"
@@ -76,19 +87,13 @@ export default function SignUpPage() {
                 align="center"
                 sx={{ fontSize: "1em", fontWeight: "bold" }}
               >
-                Arnav
+                Owen
               </TableCell>
               <TableCell
                 align="center"
                 sx={{ fontSize: "1em", fontWeight: "bold" }}
               >
                 Ryan
-              </TableCell>
-              <TableCell
-                align="center"
-                sx={{ fontSize: "1em", fontWeight: "bold" }}
-              >
-                Jeffrey
               </TableCell>
               <TableCell
                 align="center"
