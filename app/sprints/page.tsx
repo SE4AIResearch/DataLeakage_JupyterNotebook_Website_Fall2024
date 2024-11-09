@@ -1,18 +1,5 @@
 //Based on code from https://github.com/SE4AIResearch/AntiCopyPaster_Website_Fall2023/tree/main
 
-/* sx={{
-    display: "inline-block",
-    alignItems: "center",
-    backgroundColor: "#eee",
-    border: "1px solid",
-    borderColor: "green",
-    padding: 2,
-    borderRadius: "8px",
-    marginBottom: "1rem",
-    width: "350px",
-    minWidth: "350px",
-    mx: "0.5rem"
-  }} */
 "use client"; // This directive allows the component to run on the client side.
 import { Box, Chip, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
