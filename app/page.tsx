@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             &quot;Data Leakage in Notebooks: Static Detection and Better
             Processes&quot;, many model designers do not effectively separate
             their testing data from their evaluation and training data. We are
-            developing a plugin for the PyCharm IDE that identifies instances of
+            developing a plugin for the VS Code IDE that identifies instances of
             data leakage in ML code and provides suggestions on how to remove
             the leakage.
           </Typography>
