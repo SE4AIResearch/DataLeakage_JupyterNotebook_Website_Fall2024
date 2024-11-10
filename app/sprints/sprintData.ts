@@ -265,7 +265,7 @@ export const sprintData: Task[][] = [
     {
       title: "Successfully Test Pyright for Windows 11 & MacOS",
       status: "Done",
-      members: ["Michael", "Owen", "Ryan"],
+      members: ["Arnav", "Michael", "Owen", "Ryan"],
     },
     {
       title: "Bundle a Fully Docker-Free Solution Prototype for Linux",
