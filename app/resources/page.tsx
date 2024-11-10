@@ -3,7 +3,7 @@ import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
 
-const chunkArray = (array: any[], chunkSize: number) => {
+const chunkArray = (array: string[], chunkSize: number) => {
   const results = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     results.push(array.slice(i, i + chunkSize));
