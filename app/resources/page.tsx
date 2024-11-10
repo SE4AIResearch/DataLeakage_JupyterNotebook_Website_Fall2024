@@ -1,13 +1,21 @@
 "use client"; // This directive allows the component to run on the client side.
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
+
+const chunkArray = (array: any[], chunkSize: number) => {
+  const results = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    results.push(array.slice(i, i + chunkSize));
+  }
+  return results;
+};
 
 export default function Resources() {
   return (
     <Box>
       <ResponsiveAppBar />
-      <Container maxWidth="md" sx={{ textAlign: "left", pt: "5vh" }}>
+      <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
         <Typography variant="h4" gutterBottom>
           Source Code
         </Typography>
@@ -29,22 +37,31 @@ export default function Resources() {
           Website Code
         </Button>
 
-        {resourceIds.map((link, i) => {
-          return (
-            <div key={i}>
-              <Typography variant="h4" gutterBottom>
-                Week {i + 1}
-              </Typography>
-              <Button
-                variant="outlined"
-                href={`${oneDriveBaseURL}${link}`}
-                sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
-              >
-                Week {i + 1} Slides
-              </Button>
-            </div>
-          )
-        })}
+        <Typography variant="h4" gutterBottom>
+          Weekly Slides
+        </Typography>
+        {/* Button chunks of 3 */}
+        {chunkArray(resourceIds, 3).map((group, index) => (
+          <div key={index}>
+            <ButtonGroup
+              variant="outlined"
+              aria-label={`Button group for weeks ${index * 3 + 1} to ${
+                index * 3 + group.length
+              }`}
+              fullWidth
+            >
+              {group.map((link, i) => (
+                <Button
+                  key={i}
+                  sx={{marginBottom: "1rem", fontSize: "1.2rem", textTransform: "none"}}
+                  href={`${oneDriveBaseURL}${link}`}
+                >
+                  Week {index * 3 + i + 1}
+                </Button>
+              ))}
+            </ButtonGroup>
+          </div>
+        ))}
       </Container>
     </Box>
   );
