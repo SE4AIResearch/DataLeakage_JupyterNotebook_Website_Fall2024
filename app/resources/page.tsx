@@ -44,16 +44,16 @@ export default function Resources() {
         {chunkArray(resourceIds, 3).map((group, index) => (
           <div key={index}>
             <ButtonGroup
-              variant="outlined"
+              variant="contained"
               aria-label={`Button group for weeks ${index * 3 + 1} to ${
                 index * 3 + group.length
               }`}
-              fullWidth
+              sx={{ marginBottom: 2 }}
             >
               {group.map((link, i) => (
                 <Button
                   key={i}
-                  sx={{marginBottom: "1rem", fontSize: "1.2rem", textTransform: "none"}}
+                  sx={{ fontSize: "1.2rem", textTransform: "none" }}
                   href={`${oneDriveBaseURL}${link}`}
                 >
                   Week {index * 3 + i + 1}
