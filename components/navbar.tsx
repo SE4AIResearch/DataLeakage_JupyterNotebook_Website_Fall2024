@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 
 const pages = [
+  { name: "Documentation", link: "/documentation" },
   { name: "Resources", link: "/resources" },
   { name: "Sprints", link: "/sprints" },
   { name: "Time Tracking", link: "/time" },
