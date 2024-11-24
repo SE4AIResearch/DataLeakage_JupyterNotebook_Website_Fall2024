@@ -17,24 +17,37 @@ export default function Resources() {
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
         <Typography variant="h4" gutterBottom>
+          Download Binaries
+        </Typography>
+        <Button
+          variant="contained"
+          color="info"
+          href="https://stevens0-my.sharepoint.com/:f:/g/personal/ealomar_stevens_edu/EoM72dehZWZClpFgI1-0IkUB7Uaq_lNdLejGz8rrI3bVQw?e=PQdtaT"
+          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Go to Binaries
+        </Button>
+        <Typography variant="h4" gutterBottom>
           Source Code
         </Typography>
         <Button
           variant="contained"
+          color="info"
           href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Fall2024/"
           sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
         >
-          Plugin Code
+          Go to Plugin Code
         </Button>
         <Typography variant="h4" gutterBottom>
           Website Code
         </Typography>
         <Button
           variant="contained"
+          color="info"
           href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Website_Fall2024/"
           sx={{ mb: 4, fontSize: "1.2rem", textTransform: "none" }}
         >
-          Website Code
+          Go to Website Code
         </Button>
 
         <Typography variant="h4" gutterBottom>
@@ -45,6 +58,7 @@ export default function Resources() {
           <div key={index}>
             <ButtonGroup
               variant="contained"
+              color="info"
               aria-label={`Button group for weeks ${index * 3 + 1} to ${
                 index * 3 + group.length
               }`}
