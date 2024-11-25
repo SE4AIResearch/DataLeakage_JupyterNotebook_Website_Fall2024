@@ -31,7 +31,7 @@ export default function Download() {
             sx={{ fontSize: "1.2rem", textTransform: "none" }}
             download
           >
-            MacOS-ARM64
+            MacOS14-ARM64
           </Button>
         </Stack>
         {/* <Button
