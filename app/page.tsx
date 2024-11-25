@@ -54,7 +54,7 @@ const Home: React.FC = () => {
             data leakage in ML code and provides suggestions on how to remove
             the leakage.
           </Typography>
-          <Link href="https://doi.org/10.1145/3551349.3556918">
+          <Link href="https://doi.org/10.1145/3551349.3556918" variant="h6">
             Data Leakage Research Paper Link
           </Link>
         </Container>
