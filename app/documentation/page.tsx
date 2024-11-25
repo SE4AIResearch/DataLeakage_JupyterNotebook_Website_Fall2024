@@ -1,7 +1,7 @@
 "use client"; // This directive allows the component to run on the client side.
 import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
-import { oneDriveBaseURL, resourceIds } from"./resourceData";
+import { oneDriveBaseURL, resourceIds } from "./resourceData";
 
 const chunkArray = (array: string[], chunkSize: number) => {
   const results = [];
@@ -26,7 +26,7 @@ export default function Documentation() {
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
         ></iframe>
 
-<Typography variant="h4" gutterBottom>
+        <Typography variant="h4" gutterBottom>
           Source Code
         </Typography>
         <Button

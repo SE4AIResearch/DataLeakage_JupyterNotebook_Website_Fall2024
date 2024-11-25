@@ -1,8 +1,8 @@
 "use client"; // This directive allows the component to run on the client side.
 import { Box, Button, Container, Typography, Stack } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
-import MicrosoftIcon from '@mui/icons-material/Microsoft';
-import AppleIcon from '@mui/icons-material/Apple';
+import MicrosoftIcon from "@mui/icons-material/Microsoft";
+import AppleIcon from "@mui/icons-material/Apple";
 
 export default function Download() {
   return (
