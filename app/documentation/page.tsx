@@ -75,6 +75,19 @@ export default function Documentation() {
             </ButtonGroup>
           </div>
         ))}
+
+        <Typography variant="h4" gutterBottom>
+          Fall 2023 Resource Page
+        </Typography>
+        <Button
+          variant="contained"
+          color="info"
+          href="https://se4airesearch.github.io/DataLeakage_Website_Fall2023/pages/resources/"
+          sx={{ mb: 4, fontSize: "1.2rem", textTransform: "none" }}
+        >
+          Go to Resource Page
+        </Button>
+
         {/* Add empty space at bottom */}
         <Box sx={{ height: "10vh" }}> </Box>
       </Container>
