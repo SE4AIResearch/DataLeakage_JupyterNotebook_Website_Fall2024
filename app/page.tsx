@@ -15,10 +15,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Video: React.FC = () => {
   return (
     <video width="960" height="540" controls preload="none">
-      <source src="/videos/instructionVideo.mp4"/>
+      <source src="/videos/instructionVideo.mp4" />
       Video not supported on your browser
     </video>
-  )
+  );
 };
 
 const Home: React.FC = () => {
@@ -68,8 +68,10 @@ const Home: React.FC = () => {
           </Link>
         </Container>
 
-        <Container sx={{alignItems: "center"}}>
-          <Video/>
+        <Container sx={{ alignItems: "center" }}>
+          <Box sx={{ marginTop: 4 }}>
+            <Video />
+          </Box>
         </Container>
 
         {/* Project advisor section */}

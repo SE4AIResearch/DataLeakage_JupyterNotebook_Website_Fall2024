@@ -33,7 +33,7 @@ export default function Documentation() {
           variant="contained"
           color="info"
           href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Fall2024/"
-          sx={{ mb: 2, fontSize: "1.2rem", textTransform: "none" }}
+          sx={{ mb: 3, fontSize: "1.2rem", textTransform: "none" }}
         >
           Go to Plugin Code
         </Button>
@@ -44,7 +44,7 @@ export default function Documentation() {
           variant="contained"
           color="info"
           href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Website_Fall2024/"
-          sx={{ mb: 4, fontSize: "1.2rem", textTransform: "none" }}
+          sx={{ mb: 3, fontSize: "1.2rem", textTransform: "none" }}
         >
           Go to Website Code
         </Button>
@@ -76,14 +76,14 @@ export default function Documentation() {
           </div>
         ))}
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" marginTop={2} gutterBottom>
           Fall 2023 Resource Page
         </Typography>
         <Button
           variant="contained"
           color="info"
           href="https://se4airesearch.github.io/DataLeakage_Website_Fall2023/pages/resources/"
-          sx={{ mb: 4, fontSize: "1.2rem", textTransform: "none" }}
+          sx={{ fontSize: "1.2rem", textTransform: "none" }}
         >
           Go to Resource Page
         </Button>
