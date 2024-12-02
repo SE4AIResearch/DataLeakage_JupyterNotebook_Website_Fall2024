@@ -12,6 +12,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // Note: layout.tsx has the metadata (title, description), overridable
 
+const Video: React.FC = () => {
+  return (
+    <video width="960" height="540" controls preload="none">
+      <source src="/videos/instructionVideo.mp4" />
+      Video not supported on your browser
+    </video>
+  );
+};
+
 const Home: React.FC = () => {
   return (
     <Box>
@@ -57,6 +66,12 @@ const Home: React.FC = () => {
           <Link href="https://doi.org/10.1145/3551349.3556918" variant="h6">
             Data Leakage Research Paper Link
           </Link>
+        </Container>
+
+        <Container sx={{ alignItems: "center" }}>
+          <Box sx={{ marginTop: 4 }}>
+            <Video />
+          </Box>
         </Container>
 
         {/* Project advisor section */}
