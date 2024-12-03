@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             fontWeight="bold"
             gutterBottom
           >
-            Data Leakage VS Code Plugin
+            Data Leakage Detector VS Code Extension
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
             Code quality is of paramount importance in all types of software
