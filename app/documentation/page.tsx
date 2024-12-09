@@ -16,6 +16,16 @@ export default function Documentation() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
+      <Typography variant="h4">Installation Guide for Leakage Detector</Typography>
+        {/* Docker setup */}
+        <iframe
+          src="/documents/leakage-detector-installation-guide.pdf"
+          title="Docker Instructions"
+          width="100%"
+          height="600px"
+          style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
+        ></iframe>
+
         <Typography variant="h4">Docker Setup</Typography>
         {/* Docker setup */}
         <iframe
@@ -76,7 +86,7 @@ export default function Documentation() {
           </div>
         ))}
 
-        <Typography variant="h4" marginTop={2} gutterBottom>
+        <Typography variant="h4" sx={{ marginTop: 2 }} gutterBottom>
           Fall 2023 Resource Page
         </Typography>
         <Button
