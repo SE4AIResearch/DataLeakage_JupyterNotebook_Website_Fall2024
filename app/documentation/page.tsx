@@ -11,16 +11,33 @@ const chunkArray = (array: string[], chunkSize: number) => {
   return results;
 };
 
+const Video: React.FC = () => {
+  return (
+    <video
+      width="960"
+      height="540"
+      controls
+      preload="none"
+      style={{ marginTop: "1em", marginBottom: "2em" }}
+    >
+      <source src="/videos/instructionVideo.mp4" />
+      Video not supported on your browser
+    </video>
+  );
+};
+
 export default function Documentation() {
   return (
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-      <Typography variant="h4">Installation Guide for Leakage Detector</Typography>
+        <Typography variant="h4">
+          Installation Guide for Leakage Detector
+        </Typography>
         {/* Docker setup */}
         <iframe
           src="/documents/leakage-detector-installation-guide.pdf"
-          title="Docker Instructions"
+          title="Leakage Detector Installation Guide"
           width="100%"
           height="600px"
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
@@ -35,6 +52,9 @@ export default function Documentation() {
           height="600px"
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
         ></iframe>
+
+        <Typography variant="h4">Tutorial Video</Typography>
+        <Video />
 
         <Typography variant="h4" gutterBottom>
           Source Code
