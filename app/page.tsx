@@ -7,7 +7,7 @@ import michaelPfp from "../public/images/michael-pfp.jpg";
 import owenPfp from "../public/images/owen-pfp.jpg";
 import ryanPfp from "../public/images/ryan-pfp.jpg";
 import terrencePfp from "../public/images/terrence-pfp.jpg";
-import alomarPfp from "../public/images/alomar-pfp.jpg";
+// import alomarPfp from "../public/images/alomar-pfp.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // Note: layout.tsx has the metadata (title, description), overridable
