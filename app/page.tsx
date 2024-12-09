@@ -78,6 +78,7 @@ const Home: React.FC = () => {
         <Video />
 
         {/* Project advisor section */}
+        {/* Censored for now 
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
           <Typography variant="h4" component="h1" fontWeight="bold">
             Project Advisor
@@ -134,7 +135,6 @@ const Home: React.FC = () => {
             </Box>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {/* Keep buttons aligned */}
               <Button
                 variant="contained"
                 sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
@@ -153,6 +153,7 @@ const Home: React.FC = () => {
             </Box>
           </Container>
         </Box>
+        */}
 
         {/* Contributor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
