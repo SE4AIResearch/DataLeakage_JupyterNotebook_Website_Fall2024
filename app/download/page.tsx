@@ -31,6 +31,15 @@ export default function Download() {
           >
             MacOS14-ARM64
           </Button>
+
+          <Button
+            variant="contained"
+            color="primary"
+            href="/binaries/linux-amd64.zip"
+            sx={{ fontSize: "1.2rem", textTransform: "none" }}
+          >
+            Linux-x64
+          </Button>
         </Stack>
       </Container>
     </Box>
