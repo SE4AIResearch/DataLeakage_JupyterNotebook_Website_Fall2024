@@ -43,16 +43,6 @@ export default function Documentation() {
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
         ></iframe>
 
-        <Typography variant="h4">Docker Setup</Typography>
-        {/* Docker setup */}
-        <iframe
-          src="/documents/docker-instructions.pdf"
-          title="Docker Instructions"
-          width="100%"
-          height="600px"
-          style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
-        ></iframe>
-
         <Typography variant="h4">Tutorial Video</Typography>
         <Video />
 
