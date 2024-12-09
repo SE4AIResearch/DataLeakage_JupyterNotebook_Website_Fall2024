@@ -14,7 +14,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Video: React.FC = () => {
   return (
-    <video width="960" height="540" controls preload="none">
+    <video
+      width="960"
+      height="540"
+      controls
+      preload="none"
+      style={{ marginTop: "2em" }}
+    >
       <source src="/videos/instructionVideo.mp4" />
       Video not supported on your browser
     </video>
@@ -68,11 +74,8 @@ const Home: React.FC = () => {
           </Link>
         </Container>
 
-        <Container sx={{ alignItems: "center" }}>
-          <Box sx={{ marginTop: 4 }}>
-            <Video />
-          </Box>
-        </Container>
+        {/* Tutorial video (also on documentation page) */}
+        <Video />
 
         {/* Project advisor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
