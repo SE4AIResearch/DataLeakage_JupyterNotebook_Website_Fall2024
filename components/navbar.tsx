@@ -41,6 +41,7 @@ function ResponsiveAppBar() {
             href="/"
             startIcon={<AssessmentIcon />}
             sx={{
+              mx: 1,
               fontSize: "1.25em",
               color: "white",
               textDecoration: "none",
@@ -102,7 +103,6 @@ function ResponsiveAppBar() {
                 href={page.link}
                 sx={{
                   mx: 1,
-                  my: 1,
                   color: "white",
                   display: "block",
                   fontFamily: "Arial,Helvetica,sans-serif", // Set a default font
