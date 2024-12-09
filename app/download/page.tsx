@@ -12,7 +12,11 @@ export default function Download() {
         <Typography variant="h4" gutterBottom>
           Download Binaries
         </Typography>
-        <Stack direction="row" spacing={2} justifyContent="center">
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={2}
+          justifyContent="center"
+        >
           <Button
             variant="contained"
             color="primary"
