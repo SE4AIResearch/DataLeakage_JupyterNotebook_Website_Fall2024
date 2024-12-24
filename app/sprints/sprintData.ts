@@ -74,12 +74,12 @@ export const sprintData: Task[][] = [
       members: ["Owen"],
     },
     {
-      title: "Figure Out Tasks for Website",
+      title: "Figure Out Tasks for Documentation Website",
       status: "Done",
       members: ["Jeffrey", "Michael", "Ryan"],
     },
     {
-      title: "Build Website with Next.js",
+      title: "Build Documentation Website with Next.js",
       status: "In Progress",
       members: ["Jeffrey", "Michael", "Ryan"],
     },
@@ -189,7 +189,7 @@ export const sprintData: Task[][] = [
       members: ["Terrence"],
     },
     {
-      title: "Fix Button Bug From Activity Bar Switch",
+      title: "Fix Button Bug in Activity Bar Switch",
       status: "Done",
       members: ["Owen"],
     },
@@ -217,7 +217,7 @@ export const sprintData: Task[][] = [
       members: ["Terrence"],
     },
     {
-      title: "Implement Quickfix & Fix Bugs",
+      title: "Implement Quickfix & Debug Extension",
       status: "In Progress",
       members: ["Terrence"],
     },
@@ -281,6 +281,234 @@ export const sprintData: Task[][] = [
       title: "Create Panel Web View for Leakage Instances",
       status: "Done",
       members: ["Michael"],
+    },
+  ],
+  // Sprint 10
+  [
+    {
+      title: "Research Solution for Obtaining Leakage Sources",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+    {
+      title: "Merge Changes for Button & Leakage Summary Webview",
+      status: "Done",
+      members: ["Terrence", "Ryan", "Owen"],
+    },
+    {
+      title: "Refactor & Redesign Documentation Website",
+      status: "Done",
+      members: ["Arnav", "Ryan"],
+    },
+    {
+      title: "Compile Docker-Free Solution for MacOS 14 & Windows 10-11",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title: "Implement Highlight Leakage Error & Quickfix",
+      status: "In Progress",
+      members: ["Owen"],
+    },
+    {
+      title: "Add Weeks 5-9 Info to Documentation Website",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Implement Quickfix",
+      status: "Failed",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Publish Our VS Code Extension on VS Code Marketplace",
+      status: "In Progress",
+      members: ["Michael"],
+    },
+  ],
+  // Sprint 11
+  [
+    {
+      title: "Design Logo for VS Code Extension & Expo Poster",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Create Azure DevOps Organization & VS Code Marketplace Publisher",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Publish Our VS Code Extension on VS Code Marketplace",
+      status: "In Progress",
+      members: ["Michael"],
+    },
+    {
+      title: "Implement Highlight Leakage Error & Fix Table View Update Bug",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title: "Create Extension Demo Video & Upload Native Binaries to OneDrive",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title:
+        "Merge Leakage Instances & Leakage Summary Tables into Leakage-Overview Webview",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title:
+        "Implement Webview Sync on File Switch in Active Editor & Add Click Row Feature to Leakage Instances Table",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title:
+        "Add Extension Button to Auto-Install Docker-Free Program for Windows & MacOS",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title: "Compile Docker-Free Solution for Linux",
+      status: "In Progress",
+      members: ["Arnav"],
+    },
+    {
+      title: "Resolve MacOS Antivirus Issue for Docker-Free Solution",
+      status: "Done",
+      members: ["Arnav", "Owen"],
+    },
+    {
+      title: "Research Solution for Obtaining Leakage Sources",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+  ],
+  // Sprint 12
+  [
+    {
+      title: "Design New Poster Logos",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Publish Our VS Code Extension on VS Code Marketplace",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Merge & Adapt Terrence's Changes in Leakage Classes",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title: "Fix Async Completion Timing for Arnav's Button",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title: "Create Documentation Page & Download Binaries Page for Website",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Compile Docker-Free Solution for Linux",
+      status: "In Progress",
+      members: ["Arnav"],
+    },
+    {
+      title: "Research Solution for Obtaining Leakage Sources",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+  ],
+  // Sprint 13
+  [
+    {
+      title: "Upload Logo & Extension Icons on OneDrive",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+    {
+      title:
+        "Add Owen's Demo Video & Link of Previous Team's Documentation to Website",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title:
+        "Connect Leakage Classes to Webview & Add Documentation Website Link to Extension",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title:
+        "Modify Docker Instructions on Website & Review-Push Michael's Website Changes",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Compile Docker-Free Solution for Linux",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title:
+        "Communicate With Leakage-Analysis Author About Leakage Sources & Issues",
+      status: "Done",
+      members: ["Terrence"],
+    },
+    {
+      title: "Research Solution for Obtaining Leakage Sources",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+  ],
+  // Sprint 14
+  [
+    {
+      title: "Document Logo Progress in the Fall 2024 Report",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Add Linux Binary to Website",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title:
+        "Move Documentation Website Link in Extension & Fix Extension Bugs",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title:
+        "Accept Michael's PR for Website & Add More Documentation to Website",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Test Docker-Free Solution for Different Linux Distros",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title:
+        "Overhaul the Data Extraction Process to Minimize Complexity & Obtain Leakage Sources",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+  ],
+  // Sprint 15
+  [
+    {
+      title: "Review & Edit the Fall 2024 Report",
+      status: "Done",
+      members: ["All"],
     },
   ],
 ];

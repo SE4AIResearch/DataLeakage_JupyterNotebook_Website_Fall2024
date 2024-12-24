@@ -11,4 +11,10 @@ export const resourceIds = [
   "EbCZtbA4Fc5FqqPhJdDzwXYB8EUk5IALWwviRzsgO-aJMA",
   "EcDvjywpexhIoQxD9P8xMUABgpV7IXEqM6rCYSUiCMK8KQ",
   "ERHhO08GBBtHjAuNOr_mJIwBaYYLtOYDNcfjfZGqf95P3Q",
+  "Eft2TUcfFMZCnxpUN67iFL8BpYFNm3aNhX0Pv27BoSx5jA",
+  "EfzyGIMGsIdCkuQglB0GC24Bm5cDMk08mh6zIPI-mxwEAg",
+  "EYHMZmSoqwZGvDecZwiTyJUB20T9TW22w0DJyWZ4cfxe-Q",
+  "EQttU6kbg6hIhigOO44vFv4BTKjpZLQB6Oa5GiTOVIG55w",
+  "Eec76FxgxQdAqOSFw5mPNQsBEaHMS5h14T7v00brKcjGIw",
+  "EdAfHPHR3hJLlvoyI2maf6sBcvR_Zk1nonuUvhZr5SEN4A",
 ];

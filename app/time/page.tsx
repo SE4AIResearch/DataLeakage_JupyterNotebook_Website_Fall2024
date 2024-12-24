@@ -15,14 +15,14 @@ import ResponsiveAppBar from "@/components/navbar";
 
 function createData(
   week: number,
-  owen: number,
-  michael: number,
   arnav: number,
-  ryan: number,
   jeffrey: number,
+  michael: number,
+  owen: number,
+  ryan: number,
   terrence: number
 ) {
-  return { week, owen, michael, arnav, ryan, jeffrey, terrence };
+  return { week, arnav, jeffrey, michael, owen, ryan, terrence };
 }
 // Add row data here
 // Alphabetical order: Arnav Jeffrey Michael Owen Ryan Terrence
@@ -36,6 +36,12 @@ const rows = [
   createData(7, 3, 1, 2, 3.58, 3, 1),
   createData(8, 3, 1, 2, 7.75, 4, 6),
   createData(9, 7, 6, 3, 8.83, 3, 10),
+  createData(10, 6, 1.5, 1.5, 6.67, 8, 2),
+  createData(11, 8, 4, 4, 16.67, 8, 10),
+  createData(12, 2, 3, 1, 5.56, 2, 1),
+  createData(13, 3, 1, 1, 4.5, 1, 1),
+  createData(14, 3, 2, 2, 4.66, 3, 3),
+  createData(15, 2.5, 1, 1, 3.5, 1, 2),
 ];
 
 export default function SignUpPage() {
@@ -113,19 +119,19 @@ export default function SignUpPage() {
                   {row.week}
                 </TableCell>
                 <TableCell align="center" sx={{ fontSize: "1em" }}>
-                  {row.owen}
+                  {row.arnav}
+                </TableCell>
+                <TableCell align="center" sx={{ fontSize: "1em" }}>
+                  {row.jeffrey}
                 </TableCell>
                 <TableCell align="center" sx={{ fontSize: "1em" }}>
                   {row.michael}
                 </TableCell>
                 <TableCell align="center" sx={{ fontSize: "1em" }}>
-                  {row.arnav}
+                  {row.owen}
                 </TableCell>
                 <TableCell align="center" sx={{ fontSize: "1em" }}>
                   {row.ryan}
-                </TableCell>
-                <TableCell align="center" sx={{ fontSize: "1em" }}>
-                  {row.jeffrey}
                 </TableCell>
                 <TableCell align="center" sx={{ fontSize: "1em" }}>
                   {row.terrence}
