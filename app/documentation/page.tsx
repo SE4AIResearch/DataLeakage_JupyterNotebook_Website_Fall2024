@@ -1,5 +1,12 @@
 "use client"; // This directive allows the component to run on the client side.
-import { Box, Button, ButtonGroup, Container, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Container,
+  Link,
+  Typography,
+} from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
 
@@ -31,6 +38,37 @@ export default function Documentation() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
+        <Typography variant="h4" gutterBottom>
+          About Data Leakage
+        </Typography>
+        <Typography variant="h6" marginBottom={2}>
+          Data leakage in machine learning is when a model uses information
+          during training that would not be available at the time of prediction
+          like test data. This creates overly optimistic, invalid predictive
+          models. Data leakage often occurs due to poor practices in machine
+          learning code. This can include obvious mistakes like incorporating
+          test data into the training set, as well as more subtle errors, such
+          as inadvertently revealing test data distribution through
+          preprocessing before training. Learn more about the different data
+          leakage types in the links below.
+        </Typography>
+
+        <Box sx={{ marginBottom: 2 }}>
+          <Link href="/documentation/leakage/multi-test" variant="h6">
+            Multi-Test Leakage
+          </Link>
+        </Box>
+        <Box sx={{ marginBottom: 2 }}>
+          <Link href="/documentation/leakage/overlap" variant="h6">
+            Overlap Leakage
+          </Link>
+        </Box>
+        <Box sx={{ marginBottom: 6 }}>
+          <Link href="/documentation/leakage/preprocessing" variant="h6">
+            Preprocessing Leakage
+          </Link>
+        </Box>
+
         <Typography variant="h4">
           Installation Guide for Leakage Detector
         </Typography>
