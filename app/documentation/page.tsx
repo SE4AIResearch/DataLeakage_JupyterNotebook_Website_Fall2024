@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
+import InfoIcon from "@mui/icons-material/Info";
 
 const chunkArray = (array: string[], chunkSize: number) => {
   const results = [];
@@ -18,73 +19,77 @@ const chunkArray = (array: string[], chunkSize: number) => {
   return results;
 };
 
-const Video: React.FC = () => {
-  return (
-    <video
-      width="960"
-      height="540"
-      controls
-      preload="none"
-      style={{ marginTop: "1em", marginBottom: "2em" }}
-    >
-      <source src="/videos/instructionVideo.mp4" />
-      Video not supported on your browser
-    </video>
-  );
-};
-
 export default function Documentation() {
   return (
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
-          About Data Leakage
-        </Typography>
-        <Typography variant="h6" marginBottom={2}>
-          Data leakage in machine learning is when a model uses information
-          during training that would not be available at the time of prediction
-          like test data. This creates overly optimistic, invalid predictive
-          models. Data leakage often occurs due to poor practices in machine
-          learning code. This can include obvious mistakes like incorporating
-          test data into the training set, as well as more subtle errors, such
-          as inadvertently revealing test data distribution through
-          preprocessing before training. Learn more about the different data
-          leakage types in the links below.
-        </Typography>
-
-        <Box sx={{ marginBottom: 2 }}>
-          <Link href="/documentation/leakage/multi-test" variant="h6">
-            Multi-Test Leakage
-          </Link>
-        </Box>
-        <Box sx={{ marginBottom: 2 }}>
-          <Link href="/documentation/leakage/overlap" variant="h6">
-            Overlap Leakage
-          </Link>
-        </Box>
-        <Box sx={{ marginBottom: 6 }}>
-          <Link href="/documentation/leakage/preprocessing" variant="h6">
-            Preprocessing Leakage
-          </Link>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderBottom: 1,
+          }}
+        >
+          <Typography variant="h4" gutterBottom>
+            Get Started
+          </Typography>
+          <Typography variant="h6" marginBottom={2}>
+            Learn how to install and use the Leakage Detector VS Code extension.
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<InfoIcon />}
+            href="/documentation/get-started"
+            sx={{ marginBottom: 4, fontSize: "1.2rem", textTransform: "none" }}
+          >
+            Get Started
+          </Button>
         </Box>
 
-        <Typography variant="h4">
-          Installation Guide for Leakage Detector
-        </Typography>
-        {/* Docker setup */}
-        <iframe
-          src="/documents/leakage-detector-installation-guide.pdf"
-          title="Leakage Detector Installation Guide"
-          width="100%"
-          height="600px"
-          style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
-        ></iframe>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderBottom: 1,
+          }}
+        >
+          <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+            About Data Leakage
+          </Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            Data leakage in machine learning is when a model uses information
+            during training that would not be available at the time of
+            prediction like test data. This creates overly optimistic, invalid
+            predictive models. Data leakage often occurs due to poor practices
+            in machine learning code. This can include obvious mistakes like
+            incorporating test data into the training set, as well as more
+            subtle errors, such as inadvertently revealing test data
+            distribution through preprocessing before training. Learn more about
+            the different data leakage types in the links below.
+          </Typography>
 
-        <Typography variant="h4">Tutorial Video</Typography>
-        <Video />
+          <Box sx={{ marginBottom: 2 }}>
+            <Link href="/documentation/leakage/multi-test" variant="h6">
+              Multi-Test Leakage
+            </Link>
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <Link href="/documentation/leakage/overlap" variant="h6">
+              Overlap Leakage
+            </Link>
+          </Box>
+          <Box sx={{ marginBottom: 4 }}>
+            <Link href="/documentation/leakage/preprocessing" variant="h6">
+              Preprocessing Leakage
+            </Link>
+          </Box>
+        </Box>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
           Source Code
         </Typography>
         <Button
