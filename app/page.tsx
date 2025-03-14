@@ -14,16 +14,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Video: React.FC = () => {
   return (
-    <video
+    <iframe
       width="960"
       height="540"
-      controls
-      preload="none"
-      style={{ marginTop: "2em" }}
-    >
-      <source src="/videos/instructionVideo.mp4" />
-      Video not supported on your browser
-    </video>
+      src="https://www.youtube.com/embed/cHnTZx1EqAE"
+      title="Leakage Detector Video Tutorial"
+      style={{ marginTop: "1em", marginBottom: "2em" }}
+    ></iframe>
   );
 };
 
@@ -65,9 +62,9 @@ const Home: React.FC = () => {
             &quot;Data Leakage in Notebooks: Static Detection and Better
             Processes&quot;, many model designers do not effectively separate
             their testing data from their evaluation and training data. We are
-            developing a plugin for the VS Code IDE that identifies instances of
-            data leakage in ML code and provides suggestions on how to remove
-            the leakage.
+            developing an extension for the VS Code IDE that identifies
+            instances of data leakage in ML code and provides suggestions on how
+            to remove the leakage.
           </Typography>
           <Link href="https://doi.org/10.1145/3551349.3556918" variant="h6">
             Data Leakage Research Paper Link
