@@ -10,6 +10,7 @@ import {
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
 import InfoIcon from "@mui/icons-material/Info";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const chunkArray = (array: string[], chunkSize: number) => {
   const results = [];
@@ -86,6 +87,62 @@ export default function Documentation() {
             <Link href="/documentation/leakage/preprocessing" variant="h6">
               Preprocessing Leakage
             </Link>
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderBottom: 1,
+          }}
+        >
+          <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+            Example Data Leakage Files
+          </Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            Here are some example Jupyter Notebook files and their original
+            Python equivalent file that demonstrate data leakage in machine
+            learning models. There are more Python files than Jupyter Notebook
+            files because we did not convert all the original Python files to
+            Jupyter Notebook files. For example, nb_362989.ipynb is the Jupyter
+            Notebook file that contains 2 unique preprocessing leakages and 1
+            unique multi-test leakage. The original Python file, nb_362989.py,
+            contains the same leakages.
+          </Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            Download the example files below to see how data leakage can occur.
+          </Typography>
+          <Box sx={{ marginBottom: 2 }}>
+            <Button
+              variant="contained"
+              color="info"
+              startIcon={<DownloadIcon />}
+              href="/examples/test-notebooks.zip"
+              sx={{
+                marginBottom: 2,
+                fontSize: "1.2rem",
+                textTransform: "none",
+              }}
+            >
+              Example Jupyter Notebooks
+            </Button>
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <Button
+              variant="contained"
+              color="info"
+              startIcon={<DownloadIcon />}
+              href="/examples/test-py.zip"
+              sx={{
+                marginBottom: 2,
+                fontSize: "1.2rem",
+                textTransform: "none",
+              }}
+            >
+              Example Python Files
+            </Button>
           </Box>
         </Box>
 

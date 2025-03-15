@@ -110,14 +110,13 @@ export default function Overlap() {
           Example of Overlap Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          In this example below, the code had sampling happen before split. As
-          seen in the code, line 9 has fit_resample(X,y) before
-          train_test_split.
+          Pretend that the examples shown below are Jupyter Notebook files. In
+          the code below, line 9 has fit_resample(X,y) before train_test_split.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code before Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/bb7596387f986b6477002e7c6965bc87.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/9f671ef62fa92451d7dbdef1f0e73cc2.js`}"></script></body></html>`}
         >
           <div />
         </Frame>
@@ -125,21 +124,66 @@ export default function Overlap() {
         <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
           How Quick Fix Would Be Performed
         </Typography>
-        <Typography variant="h6" sx={{ marginBottom: 4 }}>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix overlap leakage
-          through: TBD
+          through a naive manual Quick Fix or through the GitHub Copilot
+          AI-based Quick Fix. The variable that is being used more than once
+          would be highlighted in red, and when you hover over it, you would see
+          a pop up that says &quot;Data Leakage: OverlapLeakage&quot;. The pop
+          up displays 3 options at the bottom, with one option that says
+          &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
+          you may select one of the light bulb icons to perform the manual Quick
+          Fix or select the option &quot;Fix using Copilot&quot; to perform the
+          Copilot AI-based Quick Fix. You must have the GitHub Copilot VS Code
+          extension to fix using Copilot, which is discussed in the installation
+          guide. These Quick Fix options attempt to resolve the data leakage.
         </Typography>
+        <Box sx={{ marginBottom: 4 }}>
+          <Link href="/documentation/get-started/install-guide" variant="h6">
+            Installation Guide
+          </Link>
+        </Box>
+
         <Typography variant="h4" gutterBottom>
-          Quick Fix Result
+          Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          Once the quick fix is performed, you can see that the train_test_split
-          line is happening before the fit_resample line.
+          Once the manual quick fix was performed, it introduced a new dataset
+          called X_X_train_new, separate from the original data, and a
+          corresponding transformation. These changes ensure that the model
+          evaluation and transformation processes are performed on entirely new
+          data, preventing overlap between training and test data. The added
+          test and transformation steps help maintain independence between
+          datasets. However, using the transformed training data for evaluation
+          can inadvertently maintain overlap if not handled separately.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code after manual Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/f64021175497534b85cb55919b6cb8ab.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/fee392557bf9e227a0341a4922305d39.js`}"></script></body></html>`}
+        >
+          <div />
+        </Frame>
+
+        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+          GitHub Copilot Quick Fix Result
+        </Typography>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
+          Once the Copilot quick fix was performed, the overlap leakage is
+          addressed by altering the point at which SMOTE oversampling is
+          applied. Initially, the oversampling was applied before data
+          splitting, which could lead to overlap between training and test
+          datasets. By applying SMOTE only on the training data after the
+          initial train-test split, this approach prevents any overlap or bias
+          that could arise from synthetic data influencing both training and
+          testing phases. Consequently, model evaluation remains valid and
+          unbiased, as the test data is independent and reflects real-world
+          scenarios.
+        </Typography>
+        {/* GitHub Gist of code after Copilot Quick Fix */}
+        <Frame
+          style={{ width: "100%", height: "500px" }}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/ca0868e609546f2fb086cecb7ce3c791.js`}"></script></body></html>`}
         >
           <div />
         </Frame>

@@ -85,13 +85,14 @@ export default function Preprocessing() {
           Example of Preprocessing Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          In the example shown below, there is preprocessing leakage because
-          there is no split before the feature selection.
+          Pretend that the examples shown below are Jupyter Notebook files. In
+          the code below, there is preprocessing leakage because there is no
+          split before the feature selection.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code before Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/d7334c53961e3f2cc3e7cf5e77b45b40.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/e16ca813f8ad2f82ecd4ac3b126e5392.js`}"></script></body></html>`}
         >
           <div />
         </Frame>
@@ -99,21 +100,62 @@ export default function Preprocessing() {
         <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
           How Quick Fix Would Be Performed
         </Typography>
-        <Typography variant="h6" sx={{ marginBottom: 4 }}>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix preprocessing
-          leakage through: TBD
+          leakage through a naive manual Quick Fix or through the GitHub Copilot
+          AI-based Quick Fix. The variable that is being used more than once
+          would be highlighted in red, and when you hover over it, you would see
+          a pop up that says &quot;Data Leakage: PreProcessingLeakage&quot;. The
+          pop up displays 3 options at the bottom, with one option that says
+          &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
+          you may select one of the light bulb icons to perform the manual Quick
+          Fix or select the option &quot;Fix using Copilot&quot; to perform the
+          Copilot AI-based Quick Fix. You must have the GitHub Copilot VS Code
+          extension to fix using Copilot, which is discussed in the installation
+          guide. These Quick Fix options attempt to resolve the data leakage.
         </Typography>
+        <Box sx={{ marginBottom: 4 }}>
+          <Link href="/documentation/get-started/install-guide" variant="h6">
+            Installation Guide
+          </Link>
+        </Box>
+
         <Typography variant="h4" gutterBottom>
-          Quick Fix Result
+          Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          Once the quick fix is performed, you can see that before the
-          gbc.fit(X_train,y_train) line, the split() line is written before it.
+          Once the manual quick fix was performed, it separated the data before
+          making predictions with y_pred = gbc.predict(X_test), ensuring X_test
+          was not influenced by the training processes. Initially, SelectKBest
+          was applied to the entire dataset, leading to data leakage. However,
+          the Quick Fix was incomplete, as SelectKBest was still not fully
+          separated from the data splitting line because the train_test_split
+          line was not fully transferred into a new line.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code after manual Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/fe01d134aecdddfc9eac1ceb5cb75749.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/8131d261243c9da6fb6e0d8cf48ebb0f.js`}"></script></body></html>`}
+        >
+          <div />
+        </Frame>
+
+        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+          GitHub Copilot Quick Fix Result
+        </Typography>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
+          Once the Copilot quick fix was performed, it applied SelectKBest only
+          after splitting the data, performing feature selection separately on
+          the training set (X_train). This ensures that X_test remains
+          independent from the feature selection process, addressing the
+          preprocessing leakage. This change preserves the integrity of the test
+          data by avoiding its influence on training decisions, effectively
+          preventing leakage.
+        </Typography>
+        {/* GitHub Gist of code after Copilot Quick Fix */}
+        <Frame
+          style={{ width: "100%", height: "500px" }}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/c499469bee19c43fc648cedb495a8f15.js`}"></script></body></html>`}
         >
           <div />
         </Frame>
