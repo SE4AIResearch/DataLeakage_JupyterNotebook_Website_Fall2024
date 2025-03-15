@@ -82,13 +82,14 @@ export default function Multitest() {
           Example of Multi-test Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          In the example shown shown below, X_test is used more than once (in
-          line 14 and line 18), hence the mult-test leakage.
+          Pretend that the examples shown below are Jupyter Notebook files. In
+          the code below, X_test is used more than once (in line 14 and line
+          18), hence the mult-test leakage.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code before Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/ef1382e548d49a2ed8c2400de257a846.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/8888a3e833105f7f86f917303ab31bc2.js`}"></script></body></html>`}
         >
           <div />
         </Frame>
@@ -96,22 +97,65 @@ export default function Multitest() {
         <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
           How Quick Fix Would Be Performed
         </Typography>
-        <Typography variant="h6" sx={{ marginBottom: 4 }}>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix multi-test leakage
-          through: TBD
+          through a naive manual Quick Fix or through the GitHub Copilot
+          AI-based Quick Fix. The variable that is being used more than once
+          would be highlighted in red, and when you hover over it, you would see
+          a pop up that says &quot;Data Leakage: MultiTestLeakage.&quot;. The
+          pop up displays 3 options at the bottom, with one option that says
+          &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
+          you may select one of the light bulb icons to perform the manual Quick
+          Fix or select the option &quot;Fix using Copilot&quot; to perform the
+          Copilot AI-based Quick Fix. You must have the GitHub Copilot VS Code
+          extension to fix using Copilot, which is discussed in the installation
+          guide. These Quick Fix options attempt to resolve the data leakage.
         </Typography>
+        <Box sx={{ marginBottom: 4 }}>
+          <Link href="/documentation/get-started/install-guide" variant="h6">
+            Installation Guide
+          </Link>
+        </Box>
+
         <Typography variant="h4" gutterBottom>
-          Quick Fix Result
+          Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
-          Once the quick fix is performed, you can see that line 14 and line 18
-          now have different variable names for X_test. Line 14 X_test is now
-          renamed to X_test_0 and line 18 X_test is renamed to X_test_1.
+          Once the manual quick fix was performed, the last three lines were
+          added to the Jupyter Notebook as shown below. It introduced a new test
+          data evaluation process to address the multi-test leakage issue. The
+          last three lines load a separate test dataset (X_X_test_new,
+          y_X_test_new), transform it using the same feature selection model,
+          and evaluate the final model&apos;s performance on this new data. This
+          process addressed multi-test leakage by ensuring that the evaluation
+          is conducted on data that was not involved in the training, providing
+          a more accurate assessment of the model&apos;s performance.
         </Typography>
-        {/* GitHub Gist of Cindy Tran's code */}
+        {/* GitHub Gist of code after manual Quick Fix */}
         <Frame
           style={{ width: "100%", height: "500px" }}
-          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/cindy795tran/8b81227b3c2d4a8daa12bf80f488233b.js`}"></script></body></html>`}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/7165d330ec6050a27beba4c62cd1652e.js`}"></script></body></html>`}
+        >
+          <div />
+        </Frame>
+
+        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+          GitHub Copilot Quick Fix Result
+        </Typography>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
+          Once the Copilot quick fix was performed, the code was modified to
+          introduce a validation set (X_val, y_val) for model scoring,
+          separating it from the final test set to reduce multi-test leakage.
+          However, using X_val with the SelectPercentile transformation applied
+          to the entire dataset inadvertently introduced pre-processing data
+          leakage, as the feature selector was fit on the entire dataset,
+          leading to the &quot;vectorizer fit on train and test data
+          together&quot; issue.
+        </Typography>
+        {/* GitHub Gist of code after Copilot Quick Fix */}
+        <Frame
+          style={{ width: "100%", height: "500px" }}
+          initialContent={`<!DOCTYPE html><html><head></head><body><script src="${`https://gist.github.com/Ryantron/ffb4b39078e636394b63715182d88f19.js`}"></script></body></html>`}
         >
           <div />
         </Frame>
