@@ -106,10 +106,13 @@ export default function Documentation() {
             Python equivalent file that demonstrate data leakage in machine
             learning models. There are more Python files than Jupyter Notebook
             files because we did not convert all the original Python files to
-            Jupyter Notebook files. For example, nb_362989.ipynb is the Jupyter
-            Notebook file that contains 2 unique preprocessing leakages and 1
-            unique multi-test leakage. The original Python file, nb_362989.py,
-            contains the same leakages.
+            Jupyter Notebook files.
+          </Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            Let&apos;s examine data leakage in the example files. For example,
+            nb_362989.ipynb is the Jupyter Notebook file that contains 2 unique
+            preprocessing leakages and 1 unique multi-test leakage. The original
+            Python file, nb_362989.py, contains the same leakages.
           </Typography>
           <Typography variant="h6" sx={{ marginBottom: 2 }}>
             Download the example files below to see how data leakage can occur.
