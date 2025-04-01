@@ -84,7 +84,7 @@ export default function Multitest() {
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Pretend that the examples shown below are Jupyter Notebook files. In
           the code below, X_test is used more than once (in line 14 and line
-          18), hence the mult-test leakage.
+          18), hence the multi-test leakage.
         </Typography>
         {/* GitHub Gist of code before Quick Fix */}
         <Frame
@@ -102,7 +102,7 @@ export default function Multitest() {
           through a naive manual Quick Fix or through the GitHub Copilot
           AI-based Quick Fix. The variable that is being used more than once
           would be highlighted in red, and when you hover over it, you would see
-          a pop up that says &quot;Data Leakage: MultiTestLeakage.&quot;. The
+          a pop up that says &quot;Data Leakage: MultiTestLeakage.&quot; The
           pop up displays 3 options at the bottom, with one option that says
           &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
           you may select one of the light bulb icons to perform the manual Quick

@@ -129,7 +129,7 @@ export default function Overlap() {
           through a naive manual Quick Fix or through the GitHub Copilot
           AI-based Quick Fix. The variable that is being used more than once
           would be highlighted in red, and when you hover over it, you would see
-          a pop up that says &quot;Data Leakage: OverlapLeakage&quot;. The pop
+          a pop up that says &quot;Data Leakage: OverlapLeakage.&quot; The pop
           up displays 3 options at the bottom, with one option that says
           &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
           you may select one of the light bulb icons to perform the manual Quick

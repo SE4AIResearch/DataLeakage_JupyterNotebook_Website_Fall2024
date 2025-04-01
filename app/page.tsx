@@ -42,29 +42,23 @@ const Home: React.FC = () => {
             Data Leakage Detector VS Code Extension
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            Code quality is of paramount importance in all types of software
-            development settings. Our project seeks to enable machine learning
-            (ML) engineers to write better code by helping them find and fix
-            instances of data leakage in their models. Data leakage is a problem
-            where an ML model is unintentionally trained on data not present in
-            the training dataset. As a result, the model effectively
-            &quot;memorizes&quot; the data it trains on, leading to an overly
-            optimistic estimate of model performance and an inability to make
-            generalized predictions.
+            We have developed a new Visual Studio Code extension that detects
+            data leakage — mainly preprocessing, overlap and multi-test leakage
+            — from Jupyter Notebook files. Data leakage happens when a model
+            training data set makes use of test data in data science code,
+            leading to inaccurate performance estimates. Beyond detection, we
+            implemented two correction mechanisms named Quick Fix: a
+            conventional approach that manually fixes the leakage and an
+            LLM-driven approach that guides ML developers toward best practices
+            for building ML pipelines.
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            To avoid introducing data leakage into their code, ML developers
-            must carefully separate their data into training, evaluation, and
-            test sets. Training data should be used to train the model,
-            evaluation data should be used to confirm the accuracy of a model
-            repeatedly, and test data should be used only once to determine the
-            accuracy of a production-ready model. According to the paper
-            &quot;Data Leakage in Notebooks: Static Detection and Better
-            Processes&quot;, many model designers do not effectively separate
-            their testing data from their evaluation and training data. We are
-            developing an extension for the VS Code IDE that identifies
-            instances of data leakage in ML code and provides suggestions on how
-            to remove the leakage.
+            According to the paper &quot;Data Leakage in Notebooks: Static
+            Detection and Better Processes&quot;, many model designers do not
+            effectively separate their testing data from their evaluation and
+            training data. We are developing an extension for the VS Code IDE
+            that identifies instances of data leakage in ML code and provides
+            suggestions on how to remove the leakage.
           </Typography>
           <Link href="https://doi.org/10.1145/3551349.3556918" variant="h6">
             Data Leakage Research Paper Link
