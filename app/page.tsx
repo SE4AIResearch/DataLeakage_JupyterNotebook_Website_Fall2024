@@ -1,12 +1,7 @@
 import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import Image from "next/image";
-import arnavPfp from "../public/images/arnav-pfp.jpg";
-import jeffreyPfp from "../public/images/jeffrey-pfp.jpg";
-import michaelPfp from "../public/images/michael-pfp.jpg";
-import owenPfp from "../public/images/owen-pfp.jpg";
-import ryanPfp from "../public/images/ryan-pfp.jpg";
-import terrencePfp from "../public/images/terrence-pfp.jpg";
+import { contributors } from "@/app/contributorsData";
 // import alomarPfp from "../public/images/alomar-pfp.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -15,9 +10,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Video: React.FC = () => {
   return (
     <iframe
-      width="960"
-      height="540"
-      src="https://www.youtube.com/embed/cHnTZx1EqAE"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/cHnTZx1EqAE?si=eJyU4E202EKZH6iv"
+      allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       title="Leakage Detector Video Tutorial"
       style={{ marginTop: "1em", marginBottom: "2em" }}
     ></iframe>
@@ -33,15 +29,10 @@ const Home: React.FC = () => {
       {/* Headline and call to action buttons */}
       <Box sx={{ textAlign: "center", pt: "5vh" }}>
         <Container>
-          <Typography
-            variant="h4"
-            component="h1"
-            fontWeight="bold"
-            gutterBottom
-          >
+          <Typography variant="h4" fontWeight="bold" gutterBottom>
             Data Leakage Detector VS Code Extension
           </Typography>
-          <Typography variant="h6" component="h2" gutterBottom>
+          <Typography variant="h6" gutterBottom>
             We have developed a new Visual Studio Code extension that detects
             data leakage — mainly preprocessing, overlap and multi-test leakage
             — from Jupyter Notebook files. Data leakage happens when a model
@@ -52,7 +43,7 @@ const Home: React.FC = () => {
             LLM-driven approach that guides ML developers toward best practices
             for building ML pipelines.
           </Typography>
-          <Typography variant="h6" component="h2" gutterBottom>
+          <Typography variant="h6" gutterBottom>
             According to the paper &quot;Data Leakage in Notebooks: Static
             Detection and Better Processes&quot;, many model designers do not
             effectively separate their testing data from their evaluation and
@@ -71,7 +62,7 @@ const Home: React.FC = () => {
         {/* Project advisor section */}
         {/* Censored for now 
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
-          <Typography variant="h4" component="h1" fontWeight="bold">
+          <Typography variant="h4" fontWeight="bold">
             Project Advisor
           </Typography>
         </Container>
@@ -118,7 +109,6 @@ const Home: React.FC = () => {
               />
               <Typography
                 variant="h6"
-                component="h2"
                 sx={{ fontWeight: "bold" }}
               >
                 Dr. Eman Abdullah AlOmar
@@ -148,7 +138,7 @@ const Home: React.FC = () => {
 
         {/* Contributor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
-          <Typography variant="h4" component="h1" fontWeight="bold">
+          <Typography variant="h4" fontWeight="bold">
             Contributors
           </Typography>
         </Container>
@@ -162,364 +152,63 @@ const Home: React.FC = () => {
           }}
         >
           <Stack spacing={2}>
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
+            {contributors.map((contributor, index) => (
+              <Container
+                key={index}
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  flexGrow: 1,
+                  backgroundColor: "#eee",
+                  padding: 2,
+                  borderRadius: "8px",
+                  marginBottom: "1rem",
+                  justifyContent: "space-between",
                 }}
               >
-                <Image
-                  src={arnavPfp}
-                  alt="Arnav Marchareddy profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexGrow: 1,
                   }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
                 >
-                  Arnav Marchareddy
-                </Typography>
-              </Box>
+                  <Image
+                    src={contributor.imageSrc}
+                    alt={`${contributor.name} profile picture`}
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      borderRadius: "50%",
+                      marginRight: "1rem",
+                    }}
+                  />
+                  <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                    {contributor.name}
+                  </Typography>
+                </Box>
 
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                {/* Keep buttons aligned */}
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/Arnavpmr"
-                  style={{ backgroundColor: "black" }}
+                <Box
+                  sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
                 >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/arnav-marchareddy/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
-
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexGrow: 1,
-                }}
-              >
-                <Image
-                  src={jeffreyPfp}
-                  alt="Jeffrey Busold profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Jeffrey Busold
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/OverkillLC"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/jeffrey-busold-64b90724b/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
-
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexGrow: 1,
-                }}
-              >
-                <Image
-                  src={michaelPfp}
-                  alt="Michael Socas profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Michael Socas
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                {/* Keep buttons aligned */}
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/StudioGuma"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/michael-socas-123a6b328/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
-
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexGrow: 1,
-                }}
-              >
-                <Image
-                  src={owenPfp}
-                  alt="Owen Truong profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Owen Truong
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                {/* Keep buttons aligned */}
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/OwenTruong"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/owen-truong/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
-
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexGrow: 1,
-                }}
-              >
-                <Image
-                  src={ryanPfp}
-                  alt="Ryan Lee profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Ryan Lee
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                {/* Keep buttons aligned */}
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/Ryantron"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/ryanleecs/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
-
-            <Container
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#eee",
-                padding: 2,
-                borderRadius: "8px", // Rounded corners
-                marginBottom: "1rem",
-                justifyContent: "space-between",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexGrow: 1,
-                }}
-              >
-                <Image
-                  src={terrencePfp}
-                  alt="Terrence Zhang profile picture"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    borderRadius: "50%",
-                    marginRight: "1rem",
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  Terrence Zhang
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-              >
-                {/* Keep buttons aligned */}
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://github.com/ZhangTerrence"
-                  style={{ backgroundColor: "black" }}
-                >
-                  <GitHubIcon aria-label="GitHub" />
-                </Button>
-                <Button
-                  variant="contained"
-                  sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
-                  href="https://www.linkedin.com/in/zhangterrence/"
-                >
-                  <LinkedInIcon aria-label="LinkedIn" />
-                </Button>
-              </Box>
-            </Container>
+                  <Button
+                    variant="contained"
+                    sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
+                    href={contributor.githubUrl}
+                    style={{ backgroundColor: "black" }}
+                  >
+                    <GitHubIcon aria-label="GitHub" />
+                  </Button>
+                  <Button
+                    variant="contained"
+                    sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
+                    href={contributor.linkedinUrl}
+                  >
+                    <LinkedInIcon aria-label="LinkedIn" />
+                  </Button>
+                </Box>
+              </Container>
+            ))}
           </Stack>
         </Box>
       </Box>

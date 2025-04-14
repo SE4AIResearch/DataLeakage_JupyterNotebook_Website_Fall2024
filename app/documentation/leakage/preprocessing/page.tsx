@@ -17,14 +17,14 @@ export default function Preprocessing() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           What is Preprocessing Leakage?
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
           Preprocessing leakage occurs when information from the test set
           influences the preprocessing steps applied to the training set.
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Causes of Preprocessing Leakage:
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
@@ -33,7 +33,7 @@ export default function Preprocessing() {
           model development and may result in poor generalization to new, unseen
           data.
         </Typography>
-        <Typography variant="h4" sx={{ marginBottom: 2 }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2 }}>
           Solutions for Preprocessing Leakage:
         </Typography>
         <List
@@ -81,7 +81,7 @@ export default function Preprocessing() {
           </ListItem>
         </List>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Example of Preprocessing Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -97,7 +97,11 @@ export default function Preprocessing() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+          gutterBottom
+        >
           How Quick Fix Would Be Performed
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -120,7 +124,7 @@ export default function Preprocessing() {
           </Link>
         </Box>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -140,7 +144,11 @@ export default function Preprocessing() {
           <div />
         </Frame>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+        >
           GitHub Copilot Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -160,7 +168,10 @@ export default function Preprocessing() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4, marginBottom: 2 }}>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4, marginBottom: 2 }}
+        >
           Other Data Leakage Types:
         </Typography>
 

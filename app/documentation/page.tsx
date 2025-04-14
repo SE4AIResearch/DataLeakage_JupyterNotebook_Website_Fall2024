@@ -33,7 +33,7 @@ export default function Documentation() {
             borderBottom: 1,
           }}
         >
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
             Get Started
           </Typography>
           <Typography variant="h6" marginBottom={2}>
@@ -58,7 +58,11 @@ export default function Documentation() {
             borderBottom: 1,
           }}
         >
-          <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{ fontWeight: "bold", marginTop: 4 }}
+          >
             About Data Leakage
           </Typography>
           <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -98,7 +102,11 @@ export default function Documentation() {
             borderBottom: 1,
           }}
         >
-          <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{ fontWeight: "bold", marginTop: 4 }}
+          >
             Example Data Leakage Files
           </Typography>
           <Typography variant="h6" sx={{ marginBottom: 2 }}>
