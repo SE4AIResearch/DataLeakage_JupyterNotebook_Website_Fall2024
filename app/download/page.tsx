@@ -31,7 +31,7 @@ export default function Download() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Download Binaries
         </Typography>
         {/* Dropdown menu to download binaries */}

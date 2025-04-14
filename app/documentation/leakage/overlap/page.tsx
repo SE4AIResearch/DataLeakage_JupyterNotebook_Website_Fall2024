@@ -17,7 +17,7 @@ export default function Overlap() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           What is Overlap Leakage?
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
@@ -25,7 +25,7 @@ export default function Overlap() {
           sharing or overlap of information between the training and test
           datasets in a machine learning model.
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Causes of Overlap Leakage:
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
@@ -35,7 +35,7 @@ export default function Overlap() {
           overly optimistic performance evaluations and may not generalize well
           to new, unseen data.
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Solutions for Overlap Leakage:
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -106,7 +106,7 @@ export default function Overlap() {
           </ListItem>
         </List>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Example of Overlap Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -121,7 +121,11 @@ export default function Overlap() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+          gutterBottom
+        >
           How Quick Fix Would Be Performed
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -144,7 +148,7 @@ export default function Overlap() {
           </Link>
         </Box>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -165,7 +169,11 @@ export default function Overlap() {
           <div />
         </Frame>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+        >
           GitHub Copilot Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -188,7 +196,10 @@ export default function Overlap() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4, marginBottom: 2 }}>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4, marginBottom: 2 }}
+        >
           Other Data Leakage Types:
         </Typography>
 

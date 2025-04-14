@@ -17,7 +17,7 @@ export default function Multitest() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           What is Multi-test Leakage?
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
@@ -25,7 +25,7 @@ export default function Multitest() {
           multiple tests or experiments is unintentionally shared or used in a
           way that compromises the validity or independence of the tests.
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Causes of Multi-test Leakage:
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 4 }}>
@@ -33,7 +33,7 @@ export default function Multitest() {
           padding processes are applied to the entire dataset before splitting
           it into training, validation, and test sets.
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Solutions for Multi-test Leakage:
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -78,7 +78,7 @@ export default function Multitest() {
           </ListItem>
         </List>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Example of Multi-test Leakage Code
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -94,7 +94,11 @@ export default function Multitest() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4 }} gutterBottom>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+          gutterBottom
+        >
           How Quick Fix Would Be Performed
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -102,8 +106,8 @@ export default function Multitest() {
           through a naive manual Quick Fix or through the GitHub Copilot
           AI-based Quick Fix. The variable that is being used more than once
           would be highlighted in red, and when you hover over it, you would see
-          a pop up that says &quot;Data Leakage: MultiTestLeakage.&quot; The
-          pop up displays 3 options at the bottom, with one option that says
+          a pop up that says &quot;Data Leakage: MultiTestLeakage.&quot; The pop
+          up displays 3 options at the bottom, with one option that says
           &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
           you may select one of the light bulb icons to perform the manual Quick
           Fix or select the option &quot;Fix using Copilot&quot; to perform the
@@ -117,7 +121,7 @@ export default function Multitest() {
           </Link>
         </Box>
 
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Manual Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -139,7 +143,11 @@ export default function Multitest() {
           <div />
         </Frame>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+        >
           GitHub Copilot Quick Fix Result
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
@@ -160,7 +168,10 @@ export default function Multitest() {
           <div />
         </Frame>
 
-        <Typography variant="h4" sx={{ marginTop: 4, marginBottom: 2 }}>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", marginTop: 4, marginBottom: 2 }}
+        >
           Other Data Leakage Types:
         </Typography>
 

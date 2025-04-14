@@ -5,9 +5,10 @@ import ResponsiveAppBar from "@/components/navbar";
 const Video: React.FC = () => {
   return (
     <iframe
-      width="960"
-      height="540"
-      src="https://www.youtube.com/embed/cHnTZx1EqAE"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/cHnTZx1EqAE?si=eJyU4E202EKZH6iv"
+      allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       title="Leakage Detector Video Tutorial"
       style={{ marginTop: "1em", marginBottom: "2em" }}
     ></iframe>
@@ -19,10 +20,10 @@ export default function GetStarted() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
-          Get Started With Leakage Detector
-        </Typography>
         <Box sx={{ borderBottom: 1 }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+            Get Started With Leakage Detector
+          </Typography>
           <Box sx={{ marginBottom: 2 }}>
             <Link href="/documentation/get-started/install-guide" variant="h6">
               Installation Guide
@@ -35,8 +36,34 @@ export default function GetStarted() {
           </Box>
         </Box>
 
-        <Typography variant="h4" sx={{ marginTop: 4 }}>
-          Tutorial Video
+        {/* Links to dependency installation tutorial videos */}
+        <Box sx={{ marginTop: 4, borderBottom: 1 }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+            Dependency Installation Tutorials
+          </Typography>
+          <Box sx={{ marginBottom: 2 }}>
+            <Typography variant="h6" sx={{ marginBottom: 2 }}>
+              YouTube videos to guide you through the installation of
+              dependencies for the extension, depending on your OS.
+            </Typography>
+            <Link href="https://youtu.be/hNaawMSUvHQ" variant="h6">
+              Windows
+            </Link>
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <Link href="https://youtu.be/qa7-W8IIIE8" variant="h6">
+              MacOS
+            </Link>
+          </Box>
+          <Box sx={{ marginBottom: 4 }}>
+            <Link href="https://youtu.be/bXXI99vvnyo" variant="h6">
+              Linux
+            </Link>
+          </Box>
+        </Box>
+
+        <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: 4 }}>
+          Extension Demo Video
         </Typography>
         <Video />
 

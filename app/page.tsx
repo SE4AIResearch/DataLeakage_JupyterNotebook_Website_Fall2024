@@ -15,9 +15,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Video: React.FC = () => {
   return (
     <iframe
-      width="960"
-      height="540"
-      src="https://www.youtube.com/embed/cHnTZx1EqAE"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/cHnTZx1EqAE?si=eJyU4E202EKZH6iv"
+      allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       title="Leakage Detector Video Tutorial"
       style={{ marginTop: "1em", marginBottom: "2em" }}
     ></iframe>
@@ -33,15 +34,10 @@ const Home: React.FC = () => {
       {/* Headline and call to action buttons */}
       <Box sx={{ textAlign: "center", pt: "5vh" }}>
         <Container>
-          <Typography
-            variant="h4"
-            component="h1"
-            fontWeight="bold"
-            gutterBottom
-          >
+          <Typography variant="h4" fontWeight="bold" gutterBottom>
             Data Leakage Detector VS Code Extension
           </Typography>
-          <Typography variant="h6" component="h2" gutterBottom>
+          <Typography variant="h6" gutterBottom>
             We have developed a new Visual Studio Code extension that detects
             data leakage — mainly preprocessing, overlap and multi-test leakage
             — from Jupyter Notebook files. Data leakage happens when a model
@@ -52,7 +48,7 @@ const Home: React.FC = () => {
             LLM-driven approach that guides ML developers toward best practices
             for building ML pipelines.
           </Typography>
-          <Typography variant="h6" component="h2" gutterBottom>
+          <Typography variant="h6" gutterBottom>
             According to the paper &quot;Data Leakage in Notebooks: Static
             Detection and Better Processes&quot;, many model designers do not
             effectively separate their testing data from their evaluation and
@@ -71,7 +67,7 @@ const Home: React.FC = () => {
         {/* Project advisor section */}
         {/* Censored for now 
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
-          <Typography variant="h4" component="h1" fontWeight="bold">
+          <Typography variant="h4" fontWeight="bold">
             Project Advisor
           </Typography>
         </Container>
@@ -118,7 +114,6 @@ const Home: React.FC = () => {
               />
               <Typography
                 variant="h6"
-                component="h2"
                 sx={{ fontWeight: "bold" }}
               >
                 Dr. Eman Abdullah AlOmar
@@ -148,7 +143,7 @@ const Home: React.FC = () => {
 
         {/* Contributor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
-          <Typography variant="h4" component="h1" fontWeight="bold">
+          <Typography variant="h4" fontWeight="bold">
             Contributors
           </Typography>
         </Container>
@@ -191,11 +186,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Arnav Marchareddy
                 </Typography>
               </Box>
@@ -251,11 +242,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Jeffrey Busold
                 </Typography>
               </Box>
@@ -310,11 +297,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Michael Socas
                 </Typography>
               </Box>
@@ -370,11 +353,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Owen Truong
                 </Typography>
               </Box>
@@ -430,11 +409,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Ryan Lee
                 </Typography>
               </Box>
@@ -490,11 +465,7 @@ const Home: React.FC = () => {
                     marginRight: "1rem",
                   }}
                 />
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  sx={{ fontWeight: "bold" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                   Terrence Zhang
                 </Typography>
               </Box>

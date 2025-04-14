@@ -13,9 +13,7 @@ export default function Sprints() {
 
       {sprintData.map((sprint, i) => {
         return (
-          <div
-            key={i}
-          >
+          <div key={i}>
             <Typography
               variant="h4"
               fontWeight="bold"
@@ -27,26 +25,27 @@ export default function Sprints() {
             <Box className="box-scroll">
               {sprint.map((task, j) => {
                 return (
-                  <Container
-                  className="complete"
-                  key={j}>
-                    <Chip label={task.status} color={statusMUIColors[task.status]} sx={{ fontSize: "1rem" }} />
+                  <Container className="complete" key={j}>
+                    <Chip
+                      label={task.status}
+                      color={statusMUIColors[task.status]}
+                      sx={{ fontSize: "1rem" }}
+                    />
                     <Typography
                       variant="h6"
-                      component="h2"
                       sx={{ fontWeight: "bold", whiteSpace: "normal" }}
                     >
                       {task.title}
                     </Typography>
-                    <Typography component="p" sx={{ whiteSpace: "normal" }}>
+                    <Typography sx={{ whiteSpace: "normal" }}>
                       Members Involved: {task.members.join(", ")}
                     </Typography>
                   </Container>
-                )
+                );
               })}
             </Box>
           </div>
-        )  
+        );
       })}
     </Box>
   );

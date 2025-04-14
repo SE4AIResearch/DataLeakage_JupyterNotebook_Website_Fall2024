@@ -7,7 +7,7 @@ export default function GetStarted() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Run Guide for Leakage Detector
         </Typography>
         {/* TODO: replace embed with typed out guide */}
@@ -19,7 +19,11 @@ export default function GetStarted() {
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
         ></iframe>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+        >
           Still Need Extension Installation Help?
         </Typography>
         <Typography variant="h6" marginBottom={2}>

@@ -7,10 +7,9 @@ export default function GetStarted() {
     <Box>
       <ResponsiveAppBar />
       <Container maxWidth="md" sx={{ textAlign: "center", pt: "5vh" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Installation Guide for Leakage Detector
         </Typography>
-        {/* TODO: replace embed with typed out guide */}
         <iframe
           src="/documents/leakage-detector-installation-guide.pdf"
           title="Leakage Detector Installation Guide"
@@ -19,12 +18,16 @@ export default function GetStarted() {
           style={{ border: "none", marginTop: "1em", marginBottom: "2em" }}
         ></iframe>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", marginTop: 4 }}
+        >
           Next Steps
         </Typography>
         <Typography variant="h6" marginBottom={2}>
-          Finished with the installation? Learn more about running the
-          extension in the link below.
+          Finished with the installation? Learn more about running the extension
+          in the link below.
         </Typography>
         <Box sx={{ marginBottom: 2 }}>
           <Link href="/documentation/get-started/run-guide" variant="h6">
