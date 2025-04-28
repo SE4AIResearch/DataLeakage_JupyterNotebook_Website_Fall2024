@@ -33,8 +33,15 @@ export default function Preprocessing() {
           model development and may result in poor generalization to new, unseen
           data.
         </Typography>
-        <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: 2 }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
           Solutions for Preprocessing Leakage:
+        </Typography>
+        <Typography variant="h6" sx={{ marginBottom: 2 }}>
+          Fix preprocessing leakage by moving feature selection after the
+          train/test split and ensuring that any data-driven preprocessing steps
+          are not influenced by test data. This approach helps you accurately
+          evaluate your model&apos;s performance on data it has not seen during
+          training. Some techniques to prevent preprocessing leakage include:
         </Typography>
         <List
           sx={{
@@ -107,16 +114,16 @@ export default function Preprocessing() {
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix preprocessing
           leakage through a naive manual Quick Fix or through the GitHub Copilot
-          AI-based Quick Fix. The variable that is being used more than once
-          would be highlighted in red, and when you hover over it, you would see
-          a pop up that says &quot;Data Leakage: PreProcessingLeakage.&quot; The
-          pop up displays 3 options at the bottom, with one option that says
+          AI-based Quick Fix. The variable associated with data leakage would be
+          highlighted in red, and when you hover over it, you would see a pop up
+          that says &quot;Data Leakage: PreProcessingLeakage.&quot; The pop up
+          displays 3 options at the bottom, with one option that says
           &quot;Quick Fix&quot;: select this to open the Quick Fix menu. Then,
           you may select one of the light bulb icons to perform the manual Quick
           Fix or select the option &quot;Fix using Copilot&quot; to perform the
           Copilot AI-based Quick Fix. You must have the GitHub Copilot VS Code
           extension to fix using Copilot, which is discussed in the installation
-          guide. These Quick Fix options attempt to resolve the data leakage.
+          guide. These Quick Fix options try to resolve the data leakage.
         </Typography>
         <Box sx={{ marginBottom: 4 }}>
           <Link href="/documentation/get-started/install-guide" variant="h6">
