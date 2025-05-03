@@ -7,7 +7,7 @@ const Video: React.FC = () => {
     <iframe
       width="560"
       height="315"
-      src="https://www.youtube.com/embed/cHnTZx1EqAE?si=eJyU4E202EKZH6iv"
+      src="https://www.youtube.com/embed/8MpmITIdiCo?si=x_OkcLLieG4QVL9H"
       allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       title="Leakage Detector Video Tutorial"
       style={{ marginTop: "1em", marginBottom: "2em" }}

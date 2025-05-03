@@ -104,8 +104,8 @@ export default function Multitest() {
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix multi-test leakage
-          through a naive manual Quick Fix or through the GitHub Copilot
-          AI-based Quick Fix. The variable associated with data leakage would be
+          through a manual Quick Fix or through the GitHub Copilot AI-based
+          Quick Fix. The variable associated with data leakage would be
           highlighted in red, and when you hover over it, you would see a pop up
           that says &quot;Data Leakage: MultiTestLeakage.&quot; The pop up
           displays 3 options at the bottom, with one option that says

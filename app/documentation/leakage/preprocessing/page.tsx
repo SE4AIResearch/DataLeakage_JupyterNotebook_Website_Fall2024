@@ -113,7 +113,7 @@ export default function Preprocessing() {
         </Typography>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Our VS Code extension can perform Quick Fix to fix preprocessing
-          leakage through a naive manual Quick Fix or through the GitHub Copilot
+          leakage through a manual Quick Fix or through the GitHub Copilot
           AI-based Quick Fix. The variable associated with data leakage would be
           highlighted in red, and when you hover over it, you would see a pop up
           that says &quot;Data Leakage: PreProcessingLeakage.&quot; The pop up
@@ -138,10 +138,10 @@ export default function Preprocessing() {
           Once the manual quick fix was performed, it separated the data before
           making predictions with y_pred = gbc.predict(X_test), ensuring X_test
           was not influenced by the training processes. Initially, SelectKBest
-          was applied to the entire dataset, leading to data leakage. However,
-          the Quick Fix was incomplete, as SelectKBest was still not fully
-          separated from the data splitting line because the train_test_split
-          line was not fully transferred into a new line.
+          was applied to the entire dataset, leading to data leakage. Once this
+          fix is implemented, predictions can still be made with y_pred =
+          gbc.predict(X_test) because X_test is no longer influenced by training
+          processes, maintaining the integrity of model evaluation.
         </Typography>
         {/* GitHub Gist of code after manual Quick Fix */}
         <Frame
