@@ -9,8 +9,7 @@ import {
 } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import { oneDriveBaseURL, resourceIds } from "./resourceData";
-import InfoIcon from "@mui/icons-material/Info";
-import DownloadIcon from "@mui/icons-material/Download";
+import { Download, Info } from "@mui/icons-material";
 
 const chunkArray = (array: string[], chunkSize: number) => {
   const results = [];
@@ -37,12 +36,13 @@ export default function Documentation() {
             Get Started
           </Typography>
           <Typography variant="h6" marginBottom={2}>
-            Learn how to install and use the Leakage Detector VS Code extension.
+            Learn how to install and use the Leakage Detector VS Code extension
+            with its dependencies.
           </Typography>
           <Button
             variant="contained"
             color="primary"
-            startIcon={<InfoIcon />}
+            startIcon={<Info />}
             href="/documentation/get-started"
             sx={{ marginBottom: 4, fontSize: "1.2rem", textTransform: "none" }}
           >
@@ -129,7 +129,7 @@ export default function Documentation() {
             <Button
               variant="contained"
               color="info"
-              startIcon={<DownloadIcon />}
+              startIcon={<Download />}
               href="/examples/test-notebooks.zip"
               sx={{
                 marginBottom: 2,
@@ -144,7 +144,7 @@ export default function Documentation() {
             <Button
               variant="contained"
               color="info"
-              startIcon={<DownloadIcon />}
+              startIcon={<Download />}
               href="/examples/test-py.zip"
               sx={{
                 marginBottom: 2,

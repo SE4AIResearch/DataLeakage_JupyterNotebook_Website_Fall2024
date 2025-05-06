@@ -3,19 +3,27 @@ import ResponsiveAppBar from "@/components/navbar";
 import Image from "next/image";
 import { contributors } from "@/app/contributorsData";
 // import alomarPfp from "../public/images/alomar-pfp.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { GitHub, LinkedIn, Info } from "@mui/icons-material";
 // Note: layout.tsx has the metadata (title, description), overridable
 
-const Video: React.FC = () => {
+interface VideoProps {
+  src: string;
+  title: string;
+}
+
+const Video: React.FC<VideoProps> = ({ src, title }) => {
   return (
     <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/8MpmITIdiCo?si=x_OkcLLieG4QVL9H"
+      src={src}
+      title={title}
       allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      title="Leakage Detector Video Tutorial"
-      style={{ marginTop: "1em", marginBottom: "2em" }}
+      style={{
+        width: "100%",
+        maxWidth: "600px",
+        minHeight: "315px",
+        marginTop: "1em",
+        marginBottom: "2em",
+      }}
     ></iframe>
   );
 };
@@ -26,7 +34,7 @@ const Home: React.FC = () => {
       {/* Header and navigation */}
       <ResponsiveAppBar />
 
-      {/* Headline and call to action buttons */}
+      {/* Headline */}
       <Box sx={{ textAlign: "center", pt: "5vh" }}>
         <Container>
           <Typography variant="h4" fontWeight="bold" gutterBottom>
@@ -56,8 +64,59 @@ const Home: React.FC = () => {
           </Link>
         </Container>
 
-        {/* Tutorial video (also on documentation page) */}
-        <Video />
+        {/* Get Started */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            pt: "5vh",
+          }}
+        >
+          <Container sx={{ borderBottom: 1 }}>
+            <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
+              Get Started
+            </Typography>
+          </Container>
+          <Typography variant="h6" marginY={2}>
+            Learn how to install and use the Leakage Detector VS Code extension
+            with its dependencies.
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<Info />}
+            href="/documentation/get-started"
+            sx={{ fontSize: "1.2rem", textTransform: "none" }}
+          >
+            Get Started
+          </Button>
+        </Box>
+
+        {/* Videos */}
+        <Box sx={{ pt: "5vh" }}>
+          <Container sx={{ borderBottom: 1 }}>
+            <Typography variant="h4" fontWeight="bold">
+              Extension Preview
+            </Typography>
+          </Container>
+          {/* Preview demo video (also on documentation page) */}
+          <Video
+            src="https://www.youtube.com/embed/uyLLaxutzsg?si=W3pgfmX8QIQ9eT5F"
+            title="Leakage Detector Preview Video"
+          />
+
+          <Container sx={{ borderBottom: 1 }}>
+            <Typography variant="h4" fontWeight="bold">
+              Full Demonstration
+            </Typography>
+          </Container>
+          {/* Full demo video (also on documentation page) */}
+          <Video
+            src="https://www.youtube.com/embed/8MpmITIdiCo?si=x_OkcLLieG4QVL9H"
+            title="Leakage Detector Full Demo Video"
+          />
+        </Box>
 
         {/* Project advisor section */}
         {/* Censored for now 
@@ -122,14 +181,14 @@ const Home: React.FC = () => {
                 href="https://github.com/EmanAlOmar"
                 style={{ backgroundColor: "black" }}
               >
-                <GitHubIcon aria-label="GitHub" />
+                <GitHub aria-label="GitHub" />
               </Button>
               <Button
                 variant="contained"
                 sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
                 href="https://www.linkedin.com/in/eman-abdullah-alomar-0251472b1/"
               >
-                <LinkedInIcon aria-label="LinkedIn" />
+                <LinkedIn aria-label="LinkedIn" />
               </Button>
             </Box>
           </Container>
@@ -197,14 +256,14 @@ const Home: React.FC = () => {
                     href={contributor.githubUrl}
                     style={{ backgroundColor: "black" }}
                   >
-                    <GitHubIcon aria-label="GitHub" />
+                    <GitHub aria-label="GitHub" />
                   </Button>
                   <Button
                     variant="contained"
                     sx={{ marginLeft: "1rem", color: "white", borderRadius: 4 }}
                     href={contributor.linkedinUrl}
                   >
-                    <LinkedInIcon aria-label="LinkedIn" />
+                    <LinkedIn aria-label="LinkedIn" />
                   </Button>
                 </Box>
               </Container>
