@@ -2,15 +2,24 @@
 import { Box, Container, Link, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 
-const Video: React.FC = () => {
+interface VideoProps {
+  src: string;
+  title: string;
+}
+
+const Video: React.FC<VideoProps> = ({ src, title }) => {
   return (
     <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/8MpmITIdiCo?si=x_OkcLLieG4QVL9H"
+      src={src}
+      title={title}
       allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      title="Leakage Detector Video Tutorial"
-      style={{ marginTop: "1em", marginBottom: "2em" }}
+      style={{
+        width: "100%",
+        maxWidth: "600px",
+        minHeight: "315px",
+        marginTop: "1em",
+        marginBottom: "2em",
+      }}
     ></iframe>
   );
 };
@@ -62,10 +71,31 @@ export default function GetStarted() {
           </Box>
         </Box>
 
-        <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: 4 }}>
-          Extension Demo Video
-        </Typography>
-        <Video />
+        {/* Videos */}
+        <Box>
+          <Container sx={{ marginTop: 4, borderBottom: 1 }}>
+            <Typography variant="h4" fontWeight="bold">
+              Extension Preview
+            </Typography>
+            {/* Preview demo video (also on documentation page) */}
+            <Video
+              src="https://www.youtube.com/embed/uyLLaxutzsg?si=W3pgfmX8QIQ9eT5F"
+              title="Leakage Detector Preview Video"
+            />
+          </Container>
+
+          <Container sx={{ marginTop: 4, borderBottom: 1 }}>
+            <Typography variant="h4" fontWeight="bold">
+              Full Demonstration
+            </Typography>
+
+            {/* Full demo video (also on documentation page) */}
+            <Video
+              src="https://www.youtube.com/embed/8MpmITIdiCo?si=x_OkcLLieG4QVL9H"
+              title="Leakage Detector Full Demo Video"
+            />
+          </Container>
+        </Box>
 
         {/* Add empty space at bottom */}
         <Box sx={{ height: "10vh" }}> </Box>
