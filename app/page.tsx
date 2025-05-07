@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           }}
         >
           <Container sx={{ borderBottom: 1 }}>
-            <Typography variant="h4" sx={{ fontWeight: "bold" }} gutterBottom>
+            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
               Get Started
             </Typography>
           </Container>
