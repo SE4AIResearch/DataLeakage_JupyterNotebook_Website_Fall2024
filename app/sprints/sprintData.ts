@@ -511,4 +511,349 @@ export const sprintData: Task[][] = [
       members: ["All"],
     },
   ],
+  // Sprint 16
+  [
+    {
+      title: "Draft the Spring 2025 Completion Plan",
+      status: "Done",
+      members: ["All"],
+    },
+  ],
+  // Sprint 17
+  [
+    {
+      title: "Start Quick Fix",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+    {
+      title: "Setup CI/CD for Publishing Extension",
+      status: "Done",
+      members: ["Ryan, Michael"],
+    },
+    {
+      title: "Setup CI/CD for Automating the Build Process of Native Binaries",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title:
+        "Start Auto Installation of Native Binaries & Extension Settings Page",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Refactor Extension Architecture & Resolve Merge Conflicts",
+      status: "In Progress",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 18
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+    {
+      title: "Test CI/CD for Publishing Extension",
+      status: "Done",
+      members: ["Ryan, Michael"],
+    },
+    {
+      title: "Test Native Binaries",
+      status: "Done",
+      members: ["All"],
+    },
+    {
+      title: "Improve Extension Settings Page",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Refactor Extension Architecture & Resolve Merge Conflicts",
+      status: "In Progress",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 19
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+    {
+      title: "Add to Documentation Website",
+      status: "Done",
+      members: ["Ryan, Michael"],
+    },
+    {
+      title: "Work on Spring 2025 Report",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title: "Improve Extension Settings Page",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Refactor Extension Architecture",
+      status: "Done",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 20
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence"],
+    },
+    {
+      title: "Test Windows Binary",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Attempt to Transfer Azure DevOps Ownership to Dr. AlOmar",
+      status: "Failed",
+      members: ["Michael"],
+    },
+    {
+      title: "Fix Windows Binary & Decouple HTML Generation",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title: "Refine UI/UX of Extension",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Improve Leakage Summary Table & Resolve Merge Conflicts",
+      status: "In Progress",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 21
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Test Native Binaries With Full Virtual Environment",
+      status: "Done",
+      members: ["Ryan, Jeffrey, Terrence, Owen"],
+    },
+    {
+      title: "Refine UI/UX of Extension",
+      status: "In Progress",
+      members: ["Jeffrey, Michael"],
+    },
+    {
+      title: "Fix Docker Mode & Resolve Merge Conflicts",
+      status: "Done",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 22
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Test Extension With Full Virtual Environment",
+      status: "Done",
+      members: ["Ryan, Jeffrey, Terrence, Owen"],
+    },
+    {
+      title: "Refine UI/UX of Extension",
+      status: "In Progress",
+      members: ["Jeffrey, Michael"],
+    },
+    {
+      title: "Fix Extension Bugs With Virtual Environment",
+      status: "Done",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 23
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Revise Documentation Website",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Finalized Two Binaries (ARM64 & x64) for MacOS",
+      status: "Done",
+      members: ["Arnav"],
+    },
+    {
+      title: "Test Extension on Linux",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Refine UI/UX of Extension",
+      status: "In Progress",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Fix Extension Bugs & Create Video Demo & Refactor Webview Code",
+      status: "Done",
+      members: ["Owen"],
+    },
+  ],
+  // Sprint 24
+  [
+    {
+      title: "Spring Break!",
+      status: "Done",
+      members: ["All"],
+    },
+  ],
+  // Sprint 25
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Research Licenses for Extension",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Refine UI/UX of Extension",
+      status: "In Progress",
+      members: ["Owen, Jeffrey"],
+    },
+    {
+      title:
+        "Design Extension Color Logos & Record Tutorial Videos for Downloading Extension Dependencies",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+  ],
+  // Sprint 26
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title:
+        "Add MIT License to Extension & Edit Guides on Documentation Website",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Research Leakage Table Display Issues",
+      status: "In Progress",
+      members: ["Owen"],
+    },
+    {
+      title: "Record Tutorial Videos for Downloading Node.js",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+  ],
+  // Sprint 27
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Convert Python Files of Known Leakage to Jupyter Notebooks",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Record Video of Extension Deployment Process",
+      status: "In Progress",
+      members: ["Michael"],
+    },
+    {
+      title: "Fix Leakage Table Display Issues",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title: "Record Tutorial Videos for Downloading Extension",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+  ],
+  // Sprint 28
+  [
+    {
+      title: "Work on Quick Fix",
+      status: "In Progress",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Record Video of Extension Deployment Process",
+      status: "Done",
+      members: ["Michael"],
+    },
+    {
+      title: "Create New UI/UX for Quick Fix & Change Documentation Website",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Modify Spring 2025 Report",
+      status: "Done",
+      members: ["Owen"],
+    },
+    {
+      title: "Fix Extension UI Bug & Test Extension After Team Merging",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+  ],
+  // Sprint 29
+  [
+    {
+      title: "Update Spring 2025 Report",
+      status: "Done",
+      members: ["All"],
+    },
+    {
+      title: "Work on Quick Fix",
+      status: "Done",
+      members: ["Terrence, Arnav, Ryan"],
+    },
+    {
+      title: "Edit Documentation Website & Rebase Quick Fix Changes",
+      status: "Done",
+      members: ["Ryan"],
+    },
+    {
+      title: "Fix UI Bugs",
+      status: "Done",
+      members: ["Jeffrey"],
+    },
+    {
+      title: "Review/Merge Pull Requests",
+      status: "Done",
+      members: ["Owen"],
+    },
+  ],
 ];

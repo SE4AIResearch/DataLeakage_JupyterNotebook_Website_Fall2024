@@ -2,7 +2,7 @@ import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
 import ResponsiveAppBar from "@/components/navbar";
 import Image from "next/image";
 import { contributors } from "@/app/contributorsData";
-// import alomarPfp from "../public/images/alomar-pfp.jpg";
+import alomarPfp from "../public/images/alomar-pfp.jpg";
 import { GitHub, LinkedIn, Info } from "@mui/icons-material";
 // Note: layout.tsx has the metadata (title, description), overridable
 
@@ -119,7 +119,6 @@ const Home: React.FC = () => {
         </Box>
 
         {/* Project advisor section */}
-        {/* Censored for now 
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
           <Typography variant="h4" fontWeight="bold">
             Project Advisor
@@ -193,7 +192,7 @@ const Home: React.FC = () => {
             </Box>
           </Container>
         </Box>
-        */}
+       
 
         {/* Contributor section */}
         <Container sx={{ pt: "5vh", borderBottom: 1 }}>
