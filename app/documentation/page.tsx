@@ -173,14 +173,13 @@ export default function Documentation() {
             Spring 2025 Report
           </Typography>
           <Typography variant="h6" sx={{ marginBottom: 2 }}>
-            Download the Spring 2025 report for an in-depth look at our
+            Check out the Spring 2025 report for an in-depth look at our
             progress and key outcomes.
           </Typography>
           <Box sx={{ marginBottom: 2 }}>
             <Button
               variant="contained"
               color="info"
-              startIcon={<Download />}
               href="/documents/data-leakage-report.pdf"
               sx={{
                 marginBottom: 2,
