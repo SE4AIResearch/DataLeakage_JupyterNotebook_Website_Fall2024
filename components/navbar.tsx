@@ -16,6 +16,7 @@ const pages = [
   { name: "Documentation", link: "/documentation" },
   { name: "Sprints", link: "/sprints" },
   { name: "Time Tracking", link: "/time" },
+  { name: "Team", link: "/team" },
 ];
 
 function ResponsiveAppBar() {

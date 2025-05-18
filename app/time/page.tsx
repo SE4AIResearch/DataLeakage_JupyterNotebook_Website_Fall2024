@@ -42,6 +42,20 @@ const rows = [
   createData(13, 3, 1, 1, 4.5, 1, 1),
   createData(14, 3, 2, 2, 4.66, 3, 3),
   createData(15, 2.5, 1, 1, 3.5, 1, 2),
+  createData(16, 3, 1, 1, 2, 2, 1),
+  createData(17, 3, 3, 2, 3, 6, 2),
+  createData(18, 3, 3, 1, 1, 3, 2),
+  createData(19, 5, 1, 2, 4, 6, 2),
+  createData(20, 4, 3, 2, 5.4, 1, 4),
+  createData(21, 8, 10, 5, 10.67, 5, 8),
+  createData(22, 3, 10, 2, 19.53, 15, 8),
+  createData(23, 5, 5, 1, 30, 10, 2),
+  createData(24, 0, 0, 0, 0, 0, 0),
+  createData(25, 2, 4, 2, 4, 2, 5),
+  createData(26, 4, 4, 3, 3.5, 4, 7),
+  createData(27, 3, 3, 2, 7.5, 3, 3),
+  createData(28, 5, 4, 3, 6.5, 25, 5),
+  createData(29, 3, 2, 3, 5, 3, 5),
 ];
 
 export default function SignUpPage() {
