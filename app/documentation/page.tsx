@@ -157,6 +157,42 @@ export default function Documentation() {
           </Box>
         </Box>
 
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderBottom: 1,
+          }}
+        >
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{ fontWeight: "bold", marginTop: 4 }}
+          >
+            Spring 2025 Report
+          </Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            Download the Spring 2025 report for an in-depth look at our
+            progress and key outcomes.
+          </Typography>
+          <Box sx={{ marginBottom: 2 }}>
+            <Button
+              variant="contained"
+              color="info"
+              startIcon={<Download />}
+              href="/documents/data-leakage-report.pdf"
+              sx={{
+                marginBottom: 2,
+                fontSize: "1.2rem",
+                textTransform: "none",
+              }}
+            >
+              Spring 2025 Report
+            </Button>
+          </Box>
+        </Box>
+
         <Typography variant="h4" gutterBottom sx={{ marginTop: 4 }}>
           Source Code
         </Typography>
